@@ -1,0 +1,15 @@
+PODS:
+  - KDCircularProgress (1.4.0)
+  - TextFieldEffects (1.2.0)
+
+DEPENDENCIES:
+  - KDCircularProgress
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  KDCircularProgress: f5770bbd83da909bf6cd96c2dea0b8bae45ec774
+  TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
+
+PODFILE CHECKSUM: 641b9a146c0483dfc0769cf64d47392e4629c290
+
+COCOAPODS: 1.0.1

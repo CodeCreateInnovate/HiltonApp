@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,14 +15,30 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome Screen" translatesAutoresizingMaskIntoConstraints="NO" id="fBp-Tx-7WL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fBp-Tx-7WL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9Gy-CZ-rrj"/>
+                            <constraint firstItem="fBp-Tx-7WL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DRC-aV-wZW"/>
+                            <constraint firstItem="fBp-Tx-7WL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="EOe-mh-atJ"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fBp-Tx-7WL" secondAttribute="bottom" id="GiW-uD-Uxy"/>
+                            <constraint firstAttribute="trailing" secondItem="fBp-Tx-7WL" secondAttribute="trailing" id="wHY-V1-ltC"/>
+                            <constraint firstItem="fBp-Tx-7WL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="xJn-KJ-Prj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="504" y="282"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Welcome Screen" width="414" height="736"/>
+    </resources>
 </document>

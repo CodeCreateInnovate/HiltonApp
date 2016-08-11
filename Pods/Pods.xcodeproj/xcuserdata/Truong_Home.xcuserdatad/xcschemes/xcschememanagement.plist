@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>KDCircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Incentive App.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Incentive AppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Incentive AppUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TextFieldEffects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>08ED8AB6B0F8CF91A456FF14EBE4470D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A91F5E7E6F7C4A5D60549353DA9676C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E62696E07EBC62F7925B1A3452CA156</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>892D3F7FDC82B59DAE1DBCC4AE676751</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9558B32FB980ED0E42BF1BD3AEC626CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
