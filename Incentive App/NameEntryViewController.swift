@@ -12,8 +12,6 @@ class NameEntryViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
     
-    var name = [NameDefaults]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

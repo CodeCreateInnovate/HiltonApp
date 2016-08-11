@@ -17,10 +17,6 @@
 		DA1D3A581D37E06D00EC516A /* Incentive_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2FA1D2A0953004A38E3 /* Incentive_AppTests.swift */; };
 		DA1F3CFB1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F3CFA1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift */; };
 		DA23924F1D5CCDA5001E3578 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23924E1D5CCDA5001E3578 /* LaunchVC.swift */; };
-		DA25B8D51D4C5A8B00F5BD5A /* NameDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25B8D41D4C5A8B00F5BD5A /* NameDefaults.swift */; };
-		DA25B8D71D4D2F4A00F5BD5A /* DailyDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25B8D61D4D2F4A00F5BD5A /* DailyDefaults.swift */; };
-		DA25B8D91D4D2F7700F5BD5A /* MonthlyDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25B8D81D4D2F7700F5BD5A /* MonthlyDefaults.swift */; };
-		DA25B8DB1D4D2F8100F5BD5A /* YearlyDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25B8DA1D4D2F8100F5BD5A /* YearlyDefaults.swift */; };
 		DA3AF1451D39EDD200880E73 /* MonthlyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1441D39EDD200880E73 /* MonthlyStatsViewController.swift */; };
 		DA3AF1471D39EDF500880E73 /* YearlyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1461D39EDF500880E73 /* YearlyStatsViewController.swift */; };
 		DA3AF1491D39F08C00880E73 /* DailyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */; };
@@ -71,10 +67,6 @@
 		DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlyGoalViewController.swift; sourceTree = "<group>"; };
 		DA1F3CFA1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountTableViewController.swift; sourceTree = "<group>"; };
 		DA23924E1D5CCDA5001E3578 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
-		DA25B8D41D4C5A8B00F5BD5A /* NameDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameDefaults.swift; sourceTree = "<group>"; };
-		DA25B8D61D4D2F4A00F5BD5A /* DailyDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyDefaults.swift; sourceTree = "<group>"; };
-		DA25B8D81D4D2F7700F5BD5A /* MonthlyDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyDefaults.swift; sourceTree = "<group>"; };
-		DA25B8DA1D4D2F8100F5BD5A /* YearlyDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlyDefaults.swift; sourceTree = "<group>"; };
 		DA3AF1441D39EDD200880E73 /* MonthlyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyStatsViewController.swift; sourceTree = "<group>"; };
 		DA3AF1461D39EDF500880E73 /* YearlyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlyStatsViewController.swift; sourceTree = "<group>"; };
 		DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStatsViewController.swift; sourceTree = "<group>"; };
@@ -217,10 +209,6 @@
 		DABDB3131D2A09FF004A38E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA25B8D41D4C5A8B00F5BD5A /* NameDefaults.swift */,
-				DA25B8D61D4D2F4A00F5BD5A /* DailyDefaults.swift */,
-				DA25B8D81D4D2F7700F5BD5A /* MonthlyDefaults.swift */,
-				DA25B8DA1D4D2F8100F5BD5A /* YearlyDefaults.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -553,18 +541,14 @@
 				DA1519D51D2F51C500A63331 /* NameEntryViewController.swift in Sources */,
 				DA1F3CFB1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift in Sources */,
 				DADA845A1D2B67BD00EAA9B5 /* SetUsetViewController.swift in Sources */,
-				DA25B8D71D4D2F4A00F5BD5A /* DailyDefaults.swift in Sources */,
 				DABDB31D1D2A1F12004A38E3 /* CustomLabel.swift in Sources */,
 				DABDB3191D2A1BE8004A38E3 /* CustomButton.swift in Sources */,
 				DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */,
 				DA1519D91D2F525800A63331 /* MonthlyGoalViewController.swift in Sources */,
 				DABDB3171D2A0CF8004A38E3 /* ContentViewController.swift in Sources */,
-				DA25B8D51D4C5A8B00F5BD5A /* NameDefaults.swift in Sources */,
 				DABDB3261D2B533D004A38E3 /* BackTableViewController.swift in Sources */,
-				DA25B8D91D4D2F7700F5BD5A /* MonthlyDefaults.swift in Sources */,
 				DABDB2E61D2A0952004A38E3 /* AppDelegate.swift in Sources */,
 				DA3AF1451D39EDD200880E73 /* MonthlyStatsViewController.swift in Sources */,
-				DA25B8DB1D4D2F8100F5BD5A /* YearlyDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
