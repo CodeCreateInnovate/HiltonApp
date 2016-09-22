@@ -29,7 +29,7 @@ class NameEntryViewController: UIViewController, UITextFieldDelegate {
 
     
     //Close TextField 
-    func textFieldShouldReturn(textField: UITextField) -> Bool     {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool     {
         self.firstName.resignFirstResponder()
         self.lastName.resignFirstResponder()
         return true
@@ -41,36 +41,40 @@ class NameEntryViewController: UIViewController, UITextFieldDelegate {
     @IBAction func saveBtn(sender: AnyObject) {
         
         // Create The Alert
-        let alertInvalid = UIAlertController(title: "Invalid", message: "Must Provide First and Last Name.", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertInvalid = UIAlertController(title: "Invalid", message: "Must Provide First and Last Name.", preferredStyle: UIAlertControllerStyle.alert)
 
         
         if firstName.text?.isEmpty != false {
             
             // add an action (button)
-            alertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            alertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             
             // show the alert
-            self.presentViewController(alertInvalid, animated: true, completion: nil)
+            self.present(alertInvalid, animated: true, completion: nil)
             
             
             } else if lastName.text?.isEmpty != false {
                 // add an action (button)
-                alertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                alertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             
                 // show the alert
-                self.presentViewController(alertInvalid, animated: true, completion: nil)
+                self.present(alertInvalid, animated: true, completion: nil)
             
             } else {
-                let nameDefaults = NSUserDefaults.standardUserDefaults()
-                nameDefaults.setObject(firstName.text, forKey: "firstName")
-                nameDefaults.setObject(lastName.text, forKey: "lastName")
+                let nameDefaults = UserDefaults.standard
+                nameDefaults.set(firstName.text, forKey: "firstName")
+                nameDefaults.set(lastName.text, forKey: "lastName")
                 nameDefaults.synchronize()
-                if let firstname = nameDefaults.stringForKey("firstName") {
+                if let firstname = nameDefaults.string(forKey: "firstName") {
                     print(firstname)
                 }
-                if let lastName = nameDefaults.stringForKey("lastName") {
+                if let lastName = nameDefaults.string(forKey: "lastName") {
                     print(lastName)
+                    
                 }
+                self.performSegue(withIdentifier: "DailyGoalVC", sender: nil)
+            
+            
 
             }
     

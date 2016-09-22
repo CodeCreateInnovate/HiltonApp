@@ -126,6 +126,11 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
         0.98 : "59",
         0.99 : "59"]
 
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        timeText.resignFirstResponder()
+        return true
+    }
 
     
     override func viewDidLoad() {
@@ -135,7 +140,7 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
         //Class Driven Functions
         
         timeText.underlined()
-        textFieldShouldReturn(timeText)
+        textFieldShouldReturn(textField: timeText)
         hideKeyboardWhenTappedAround()
         self.navigationItem.title = "Set-Uset Calculator"
         
@@ -149,7 +154,7 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
 
     }
     
-    //Helper Method To Split String, Compate To Dictionary and Print Text
+    //Helper Method To Split String, Compare To Dictionary and Print Text
     
     func splitString() {
         let time = Double(timeText.text!)
@@ -174,16 +179,21 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
         
         splitString()
         
-        let setAlertInvalid = UIAlertController(title: "Invalid", message: "Please Enter Set or Uset Time", preferredStyle: UIAlertControllerStyle.Alert)
+        let setAlertInvalid = UIAlertController(title: "Invalid", message: "Please Enter Set or Uset Time", preferredStyle: UIAlertControllerStyle.alert)
         
         if timeText.text?.isEmpty != false {
-            setAlertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(setAlertInvalid, animated: true, completion: nil)
+            setAlertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(setAlertInvalid, animated: true, completion: nil)
         } else {
+            textFieldShouldReturn(textField: timeText)
             print("Thank You!")
         }
     }
+    
+    
 }
+
+
 
 
 

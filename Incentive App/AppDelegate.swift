@@ -1,3 +1,5 @@
+
+
 //
 //  AppDelegate.swift
 //  Incentive App
@@ -13,46 +15,96 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
+     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        
+        
         
         let navMenu = UINavigationBar.appearance()
-        navMenu.tintColor = UIColor.whiteColor()
+        navMenu.tintColor = UIColor.white
         navMenu.barTintColor = UIColor(red: 15/255, green: 43/255, blue: 124/255, alpha: 1.0)
-        navMenu.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        navMenu.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         
         
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        UIApplication.shared.statusBarStyle = .lightContent
         
         let pageController = UIPageControl.appearance()
-        pageController.pageIndicatorTintColor = UIColor.lightGrayColor()
-        pageController.currentPageIndicatorTintColor = UIColor.whiteColor()
+        pageController.pageIndicatorTintColor = UIColor.lightGray
+        pageController.currentPageIndicatorTintColor = UIColor.white
         pageController.backgroundColor = UIColor(red: 15/255, green: 43/255, blue: 124/255, alpha: 1.0)
         
+    
+    //Functions To Start View Controllers
+    
+    func dataIsFull() {
+
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let frontView = storyboard.instantiateViewController(withIdentifier: "dailyEntry") as! DailyEntryViewController
+        let rearView = storyboard.instantiateViewController(withIdentifier: "BackTableVC") as! BackTableVC
+        
+        let frontNav = UINavigationController(rootViewController: frontView)
+        let rearNav = UINavigationController(rootViewController: rearView)
+        
+        let revealController = SWRevealViewController(rearViewController: rearNav,frontViewController: frontNav)
+        
+        window?.rootViewController = revealController
+        window?.makeKeyAndVisible()
+        
+        
+    }
+    
+    func dataIsEmpty() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController: ViewController = storyboard.instantiateViewController(withIdentifier: "viewController") as! ViewController
+        window?.rootViewController = viewController
+        window?.makeKeyAndVisible()
+ 
+    }
+        
+        // Check NSUserDefaults
+        
+        if  UserDefaults.standard.object(forKey: "firstName") != nil &&
+            UserDefaults.standard.object(forKey: "lastName") != nil &&
+            UserDefaults.standard.object(forKey: "dailyGoal") != nil &&
+            UserDefaults.standard.object(forKey: "monthlyGoal") != nil &&
+            UserDefaults.standard.object(forKey: "yearlyGoal") != nil {
+            dataIsFull()
+            print("All Defaults Have Values")
+        } else {
+            dataIsEmpty()
+            print("We Need Some Info")
+        }
+
+        
+        
+        
+        
+    
         
         // Override point for customization after application launch.
         return true
     }
 
-    func applicationWillResignActive(application: UIApplication) {
+    func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
     }
 
-    func applicationDidEnterBackground(application: UIApplication) {
+    func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
 
-    func applicationWillEnterForeground(application: UIApplication) {
+    func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     }
 
-    func applicationDidBecomeActive(application: UIApplication) {
+    func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
-    func applicationWillTerminate(application: UIApplication) {
+    func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 

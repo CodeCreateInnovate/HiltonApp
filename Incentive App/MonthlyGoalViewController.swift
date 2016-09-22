@@ -12,27 +12,27 @@ import UIKit
 
 class MonthlyGoalViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var monthlyTextField: UITextField!
     var monthlyDataHundreds : [Int] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
     
         
-        textField.underlined()
+        monthlyTextField.underlined()
         hideKeyboardWhenTappedAround()
         
         self.navigationItem.title = "Monthly Goal"
-        self.textField.delegate = self
+        self.monthlyTextField.delegate = self
         
         
         //Setting the Picker
         
         let monthlyPicker = UIPickerView()
-        textField.inputView = monthlyPicker
+        monthlyTextField.inputView = monthlyPicker
         monthlyPicker.delegate = self
         monthlyPicker.dataSource = self
-        monthlyPicker.backgroundColor = UIColor.whiteColor()
+        monthlyPicker.backgroundColor = UIColor.white
         monthlyPicker.showsSelectionIndicator = true
         
         //Setting PickerView Range
@@ -44,48 +44,62 @@ class MonthlyGoalViewController: UIViewController, UIPickerViewDataSource, UIPic
         
         //Set Toolbar for Picker
         
-        let toolBar = UIToolbar()
-        textField.inputAccessoryView = toolBar
-        toolBar.barStyle = UIBarStyle.Default
-        toolBar.translucent = true
-        toolBar.tintColor = UIColor.blackColor()
-        toolBar.sizeToFit()
+        let monthlyToolBar = UIToolbar()
+        monthlyTextField.inputAccessoryView = monthlyToolBar
+        monthlyToolBar.barStyle = UIBarStyle.default
+        monthlyToolBar.isTranslucent = true
+        monthlyToolBar.tintColor = UIColor.white
+        monthlyToolBar.sizeToFit()
+        monthlyToolBar.barTintColor = UIColor.black
         
         
         //Creating Toolbar Options
         
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(MonthlyGoalViewController.donePicker))
-        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(MonthlyGoalViewController.cancelPicker))
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(MonthlyGoalViewController.donePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(MonthlyGoalViewController.cancelPicker))
         
-        toolBar.setItems([cancelButton,spaceButton,doneButton], animated: false)
-        toolBar.userInteractionEnabled = true
+        monthlyToolBar.setItems([cancelButton,spaceButton,doneButton], animated: false)
+        monthlyToolBar.isUserInteractionEnabled = true
     }
     
+    func donePicker() {
+        
+        view.endEditing(true)
+//        self.monthlyTextField.resignFirstResponder()
+    }
     
+    func cancelPicker() {
+        view.endEditing(true)
+//        self.monthlyTextField.resignFirstResponder()
+    }
     
     
     
     //Creates Layout For Pickerview
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return monthlyDataHundreds.count
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return monthlyDataHundreds.count
     }
+ 
     
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         return "\(monthlyDataHundreds[row])"
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        textField.text = "\(monthlyDataHundreds[row])"
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        monthlyTextField.text = "\(monthlyDataHundreds[row])"
 
     }
+    
+
+
     
     
     // Save Button that Holds Alerts For Checking Validity of Text Fields
@@ -93,34 +107,21 @@ class MonthlyGoalViewController: UIViewController, UIPickerViewDataSource, UIPic
 
         // Error Check and Alert to See if TextField Is Empty
         
-         let monthlyAlertInvalid = UIAlertController(title: "Invalid", message: "Must Provide Monthly Goal", preferredStyle: UIAlertControllerStyle.Alert)
+         let monthlyAlertInvalid = UIAlertController(title: "Invalid", message: "Must Provide Monthly Goal", preferredStyle: UIAlertControllerStyle.alert)
         
-        if textField.text?.isEmpty != false {
-            monthlyAlertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(monthlyAlertInvalid, animated: true, completion: nil)
+        if monthlyTextField.text?.isEmpty != false {
+            monthlyAlertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(monthlyAlertInvalid, animated: true, completion: nil)
             
         } else {
-                let mGoal = NSUserDefaults.standardUserDefaults()
-            mGoal.setObject(textField.text, forKey: "monthlyGoal")
-            NSUserDefaults.standardUserDefaults().synchronize()
+                let mGoal = UserDefaults.standard
+            mGoal.set(monthlyTextField.text, forKey: "monthlyGoal")
+            UserDefaults.standard.synchronize()
             print(mGoal)
+            
         }
-
+        self.performSegue(withIdentifier: "YearlyGoalVC", sender: nil)
     }
-    
-    //Helper Methods for Pickerview Toolbar
-    
-    
-    func donePicker() {
-        
-        self.textField.resignFirstResponder()
-    }
-    
-    func cancelPicker() {
-        self.textField.resignFirstResponder()
-    }
-    
-
 }
 
 

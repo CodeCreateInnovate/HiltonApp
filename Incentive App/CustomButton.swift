@@ -13,6 +13,7 @@ class CustomButton: UIButton {
     override func awakeFromNib() {
         
         backgroundColor = UIColor(red: 105/255, green: 178/255, blue: 9/255, alpha: 1.0)
+        
        
         
     }

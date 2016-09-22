@@ -1,14 +1,14 @@
 PODS:
-  - KDCircularProgress (1.4.0)
-  - TextFieldEffects (1.2.0)
+  - KDCircularProgress (1.5.0)
+  - TextFieldEffects (1.3.0)
 
 DEPENDENCIES:
   - KDCircularProgress
   - TextFieldEffects
 
 SPEC CHECKSUMS:
-  KDCircularProgress: f5770bbd83da909bf6cd96c2dea0b8bae45ec774
-  TextFieldEffects: bc4fd3bd557321bd61a0762f3f50965477a36f62
+  KDCircularProgress: 50edf94b32a1bd96f73e2ee01453bedb801c3042
+  TextFieldEffects: ef594746f17997c813e07633f8ae5acaf9b04f27
 
 PODFILE CHECKSUM: 641b9a146c0483dfc0769cf64d47392e4629c290
 

@@ -15,11 +15,8 @@
 		DA1519D91D2F525800A63331 /* MonthlyGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */; };
 		DA1519DB1D2F528900A63331 /* YearlyGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */; };
 		DA1D3A581D37E06D00EC516A /* Incentive_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2FA1D2A0953004A38E3 /* Incentive_AppTests.swift */; };
-		DA1F3CFB1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1F3CFA1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift */; };
-		DA23924F1D5CCDA5001E3578 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA23924E1D5CCDA5001E3578 /* LaunchVC.swift */; };
-		DA3AF1451D39EDD200880E73 /* MonthlyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1441D39EDD200880E73 /* MonthlyStatsViewController.swift */; };
-		DA3AF1471D39EDF500880E73 /* YearlyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1461D39EDF500880E73 /* YearlyStatsViewController.swift */; };
 		DA3AF1491D39F08C00880E73 /* DailyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */; };
+		DABB07251D775973007E0755 /* DailyEntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB07241D775973007E0755 /* DailyEntryData.swift */; };
 		DABDB2E61D2A0952004A38E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */; };
 		DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E71D2A0952004A38E3 /* ViewController.swift */; };
 		DABDB2EB1D2A0952004A38E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABDB2E91D2A0952004A38E3 /* Main.storyboard */; };
@@ -33,6 +30,7 @@
 		DABDB3221D2B4F20004A38E3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDB3211D2B4F20004A38E3 /* SWRevealViewController.m */; };
 		DABDB3241D2B50C9004A38E3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB3231D2B50C9004A38E3 /* AccountViewController.swift */; };
 		DABDB3261D2B533D004A38E3 /* BackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB3251D2B533D004A38E3 /* BackTableViewController.swift */; };
+		DACAF1171D8AF1AA00BEB870 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACAF1161D8AF1AA00BEB870 /* UserDefaults.swift */; };
 		DADA84581D2B678F00EAA9B5 /* DailyEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA84571D2B678F00EAA9B5 /* DailyEntryViewController.swift */; };
 		DADA845A1D2B67BD00EAA9B5 /* SetUsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */; };
 /* End PBXBuildFile section */
@@ -65,11 +63,8 @@
 		DA1519D61D2F523A00A63331 /* DailyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyGoalViewController.swift; sourceTree = "<group>"; };
 		DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyGoalViewController.swift; sourceTree = "<group>"; };
 		DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlyGoalViewController.swift; sourceTree = "<group>"; };
-		DA1F3CFA1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountTableViewController.swift; sourceTree = "<group>"; };
-		DA23924E1D5CCDA5001E3578 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
-		DA3AF1441D39EDD200880E73 /* MonthlyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyStatsViewController.swift; sourceTree = "<group>"; };
-		DA3AF1461D39EDF500880E73 /* YearlyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlyStatsViewController.swift; sourceTree = "<group>"; };
 		DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStatsViewController.swift; sourceTree = "<group>"; };
+		DABB07241D775973007E0755 /* DailyEntryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyEntryData.swift; sourceTree = "<group>"; };
 		DABDB2E21D2A0952004A38E3 /* Incentive App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Incentive App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABDB2E71D2A0952004A38E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +87,7 @@
 		DABDB3211D2B4F20004A38E3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		DABDB3231D2B50C9004A38E3 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		DABDB3251D2B533D004A38E3 /* BackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableViewController.swift; sourceTree = "<group>"; };
+		DACAF1161D8AF1AA00BEB870 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		DADA84571D2B678F00EAA9B5 /* DailyEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyEntryViewController.swift; sourceTree = "<group>"; };
 		DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUsetViewController.swift; sourceTree = "<group>"; };
 		DF909308D36D6CFDD5A17B70 /* Pods_Incentive_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Incentive_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +205,8 @@
 		DABDB3131D2A09FF004A38E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DABB07241D775973007E0755 /* DailyEntryData.swift */,
+				DACAF1161D8AF1AA00BEB870 /* UserDefaults.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -233,14 +231,10 @@
 				DADA84571D2B678F00EAA9B5 /* DailyEntryViewController.swift */,
 				DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */,
 				DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */,
-				DA3AF1441D39EDD200880E73 /* MonthlyStatsViewController.swift */,
-				DA3AF1461D39EDF500880E73 /* YearlyStatsViewController.swift */,
 				DA1519D41D2F51C500A63331 /* NameEntryViewController.swift */,
 				DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */,
 				DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */,
 				DA1519D61D2F523A00A63331 /* DailyGoalViewController.swift */,
-				DA1F3CFA1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift */,
-				DA23924E1D5CCDA5001E3578 /* LaunchVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -532,23 +526,21 @@
 				DABDB3221D2B4F20004A38E3 /* SWRevealViewController.m in Sources */,
 				DA1519DB1D2F528900A63331 /* YearlyGoalViewController.swift in Sources */,
 				DA3AF1491D39F08C00880E73 /* DailyStatsViewController.swift in Sources */,
-				DA3AF1471D39EDF500880E73 /* YearlyStatsViewController.swift in Sources */,
 				DA1519D71D2F523A00A63331 /* DailyGoalViewController.swift in Sources */,
-				DA23924F1D5CCDA5001E3578 /* LaunchVC.swift in Sources */,
 				DABDB31B1D2A1D36004A38E3 /* CustomBackground.swift in Sources */,
 				DABDB3241D2B50C9004A38E3 /* AccountViewController.swift in Sources */,
 				DADA84581D2B678F00EAA9B5 /* DailyEntryViewController.swift in Sources */,
 				DA1519D51D2F51C500A63331 /* NameEntryViewController.swift in Sources */,
-				DA1F3CFB1D3D1C7E00C5E0F7 /* EditAccountTableViewController.swift in Sources */,
 				DADA845A1D2B67BD00EAA9B5 /* SetUsetViewController.swift in Sources */,
 				DABDB31D1D2A1F12004A38E3 /* CustomLabel.swift in Sources */,
 				DABDB3191D2A1BE8004A38E3 /* CustomButton.swift in Sources */,
 				DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */,
 				DA1519D91D2F525800A63331 /* MonthlyGoalViewController.swift in Sources */,
 				DABDB3171D2A0CF8004A38E3 /* ContentViewController.swift in Sources */,
+				DACAF1171D8AF1AA00BEB870 /* UserDefaults.swift in Sources */,
 				DABDB3261D2B533D004A38E3 /* BackTableViewController.swift in Sources */,
 				DABDB2E61D2A0952004A38E3 /* AppDelegate.swift in Sources */,
-				DA3AF1451D39EDD200880E73 /* MonthlyStatsViewController.swift in Sources */,
+				DABB07251D775973007E0755 /* DailyEntryData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,8 +610,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -665,8 +659,10 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -694,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C319043ABA016CABE8F98C4D /* Pods-Incentive App.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -712,6 +709,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9865158616EC93818068074E /* Pods-Incentive App.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
