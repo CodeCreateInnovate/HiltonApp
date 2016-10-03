@@ -13,6 +13,8 @@ import UIKit
 class DailyGoalViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var dailyTextField: UITextField!
+
+    
     var dailyDataHundreds : [Int] = []
 
     override func viewDidLoad() {
@@ -34,6 +36,7 @@ class DailyGoalViewController: UIViewController, UIPickerViewDataSource, UIPicke
         dailyPicker.dataSource = self
         dailyPicker.backgroundColor = UIColor.white
         dailyPicker.showsSelectionIndicator = true
+
         
         //Setting PickerView Range
         var count = 0
@@ -80,20 +83,21 @@ class DailyGoalViewController: UIViewController, UIPickerViewDataSource, UIPicke
 
     
     
-    //Creates Layout for Picker View ********************************************************
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//    //Creates Layout for Picker View ********************************************************
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return dailyDataHundreds.count
     }
 
 
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-            return "\(dailyDataHundreds[row])"
+        return "\(dailyDataHundreds[row])"
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -101,6 +105,8 @@ class DailyGoalViewController: UIViewController, UIPickerViewDataSource, UIPicke
         dailyTextField.text = "\(dailyDataHundreds[row])"
 
     }
+    
+    
     
 
     

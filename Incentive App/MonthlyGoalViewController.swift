@@ -77,15 +77,16 @@ class MonthlyGoalViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     
     //Creates Layout For Pickerview
-    
-
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return monthlyDataHundreds.count
     }
+    
+
  
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

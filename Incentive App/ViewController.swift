@@ -22,6 +22,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         
         self.pageTitles = NSArray(objects: "HGV / EHI","Calculate Sick Time", "Set Goals", "View Statistics")
         self.pageImages = NSArray(objects: "","Sick_Time","Set_Goals","View_Stats")
@@ -121,7 +122,7 @@ extension UIViewController {
 }
 
 extension UITextFieldDelegate {
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }

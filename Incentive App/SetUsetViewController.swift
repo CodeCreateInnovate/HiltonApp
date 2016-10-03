@@ -140,9 +140,26 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
         //Class Driven Functions
         
         timeText.underlined()
-        textFieldShouldReturn(textField: timeText)
         hideKeyboardWhenTappedAround()
         self.navigationItem.title = "Set-Uset Calculator"
+        self.timeText.delegate = self
+        
+        let toolBar = UIToolbar()
+        self.timeText.inputAccessoryView = toolBar
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.barTintColor = UIColor.black
+        toolBar.sizeToFit()
+        toolBar.tintColor = UIColor.white
+        
+        // Create Buttons on Toolbar
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: #selector(SetUsetViewController.donePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(SetUsetViewController.cancelPicker))
+        toolBar.setItems([cancelButton,spaceButton,doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+
+        
         
         //Reveal Controller
         
@@ -185,10 +202,18 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
             setAlertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(setAlertInvalid, animated: true, completion: nil)
         } else {
-            textFieldShouldReturn(textField: timeText)
             print("Thank You!")
         }
     }
+    
+    func donePicker() {
+        view.endEditing(true)
+    }
+    
+    func cancelPicker() {
+        view.endEditing(true)
+    }
+
     
     
 }

@@ -18,10 +18,7 @@ class NameEntryViewController: UIViewController, UITextFieldDelegate {
         
         firstName.underlined()
         lastName.underlined()
-        textFieldShouldReturn(firstName)
-        textFieldShouldReturn(lastName)
         hideKeyboardWhenTappedAround()
-        
         self.navigationItem.title = "Name"
         self.firstName.delegate = self
         self.lastName.delegate = self

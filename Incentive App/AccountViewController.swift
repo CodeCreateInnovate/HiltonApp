@@ -18,15 +18,21 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
     @IBOutlet weak var editYearlyGoal: UITextField!
     
     
+
+    
     //Arrays To Hold Counts For Pickers
     var daily : [Int] = []
     var monthly : [Int] = []
     var yearly : [Int] = []
+    
 
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+
+        
         
         editFirstName.underlined()
         editLastName.underlined()
@@ -34,6 +40,9 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         editMonthlyGoal.underlined()
         editYearlyGoal.underlined()
         hideKeyboardWhenTappedAround()
+
+
+
         
         self.navigationItem.title = "Account Info"
         
@@ -86,6 +95,7 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         self.editDailyGoal.delegate = self
         self.editMonthlyGoal.delegate = self
         self.editYearlyGoal.delegate = self
+        
 
         
         let dailyPicker = UIPickerView()
@@ -136,6 +146,8 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         editDailyGoal.inputAccessoryView = toolBar
         editMonthlyGoal.inputAccessoryView = toolBar
         editYearlyGoal.inputAccessoryView = toolBar
+        editFirstName.inputAccessoryView = toolBar
+        editLastName.inputAccessoryView = toolBar
         
         
         toolBar.barStyle = UIBarStyle.default
@@ -159,15 +171,13 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
     //Helper Methods for Pickerview Toolbar
     
     func donePicker() {
-        
         view.endEditing(true)
-        //        self.dailyTextField.resignFirstResponder()
+
     }
     
     func cancelPicker() {
-        
         view.endEditing(true)
-        //        self.dailyTextField.resignFirstResponder()
+
     }
     
     
@@ -253,6 +263,15 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         }
         
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        editFirstName.resignFirstResponder()
+        editLastName.resignFirstResponder()
+        editDailyGoal.resignFirstResponder()
+        editMonthlyGoal.resignFirstResponder()
+        editYearlyGoal.resignFirstResponder()
+        return true
     }
     
     
