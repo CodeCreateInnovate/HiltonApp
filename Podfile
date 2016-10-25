@@ -19,5 +19,6 @@ target 'Incentive App' do
     inherit! :search_paths
     # Pods for testing
   end
+  end
 
-end
+

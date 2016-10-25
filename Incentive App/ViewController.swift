@@ -121,13 +121,6 @@ extension UIViewController {
     }
 }
 
-extension UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-}
 
 extension UITextField {
     func underlined(){

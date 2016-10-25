@@ -1,5 +1,5 @@
 PODS:
-  - KDCircularProgress (1.5.0)
+  - KDCircularProgress (1.5.2)
   - TextFieldEffects (1.3.0)
 
 DEPENDENCIES:
@@ -7,9 +7,9 @@ DEPENDENCIES:
   - TextFieldEffects
 
 SPEC CHECKSUMS:
-  KDCircularProgress: 50edf94b32a1bd96f73e2ee01453bedb801c3042
+  KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
   TextFieldEffects: ef594746f17997c813e07633f8ae5acaf9b04f27
 
-PODFILE CHECKSUM: 641b9a146c0483dfc0769cf64d47392e4629c290
+PODFILE CHECKSUM: 3fb9dcd5100879a8ad0d1cc63d98626ca6ee9656
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

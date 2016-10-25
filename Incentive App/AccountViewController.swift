@@ -56,24 +56,24 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         }
         
         
-        //Save The Data
+        //Load The Data
         let dGoal = UserDefaults.standard
         dGoal.synchronize()
         if let dlyGoal = dGoal.string(forKey: "dailyGoal") {
-            editDailyGoal.text = dlyGoal
+            editDailyGoal.text = "Daily Goal: \(dlyGoal)"
         }
 
         
         let mGoal = UserDefaults.standard
         mGoal.synchronize()
         if let monGoal = mGoal.string(forKey: "monthlyGoal") {
-            editMonthlyGoal.text = monGoal
+            editMonthlyGoal.text = "Monthly Goal: \(monGoal)"
         }
         
         let yGoal = UserDefaults.standard
         yGoal.synchronize()
         if let yearGoal = yGoal.string(forKey: "yearlyGoal") {
-            editYearlyGoal.text = yearGoal
+            editYearlyGoal.text = "Yearly Goal: \(yearGoal)"
         }
     
         
@@ -81,10 +81,10 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         nameDefaults.synchronize()
         
         if let firstname = nameDefaults.string(forKey: "firstName") {
-            editFirstName.text = firstname
+            editFirstName.text = (firstname)
         }
         if let lastName = nameDefaults.string(forKey: "lastName") {
-            editLastName.text = lastName
+            editLastName.text = (lastName)
             
         }
 
@@ -229,6 +229,10 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
     }
     
     @IBAction func saveButton(sender: AnyObject) {
+        
+        let goalsUpdate = UIAlertController(title: "Thank You", message: "Your Account Info Has Been Updated", preferredStyle: UIAlertControllerStyle.alert)
+        goalsUpdate.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(goalsUpdate, animated: true, completion: nil)
 
         let nameDefaults = UserDefaults.standard
         let dGoal = UserDefaults.standard
@@ -261,8 +265,6 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         if let newYearlyGoal = yGoal.string(forKey: "yearlyGoal") {
             print(newYearlyGoal)
         }
-        
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -274,8 +276,6 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         return true
     }
     
-    
-
 }
 
 
