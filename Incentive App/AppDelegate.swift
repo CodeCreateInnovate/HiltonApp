@@ -9,6 +9,9 @@
 //
 
 import UIKit
+import Fabric
+import Answers
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navMenu.tintColor = UIColor.white
         navMenu.barTintColor = UIColor(red: 15/255, green: 43/255, blue: 124/255, alpha: 1.0)
         navMenu.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+
         
         
         UIApplication.shared.statusBarStyle = .lightContent
@@ -79,9 +83,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        
-    
-        
+        Fabric.with([Answers.self])
+
         // Override point for customization after application launch.
         return true
     }

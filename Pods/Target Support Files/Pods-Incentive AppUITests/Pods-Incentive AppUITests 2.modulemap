@@ -1,6 +1,0 @@
-framework module Pods_Incentive_AppUITests {
-  umbrella header "Pods-Incentive AppUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

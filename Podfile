@@ -7,6 +7,7 @@ target 'Incentive App' do
 
   pod 'KDCircularProgress'
   pod 'TextFieldEffects'
+  pod 'Google-Mobile-Ads-SDK'
 
   # Pods for Incentive App
 

@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 //Arrays to hold Daily Entries
-class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, GADBannerViewDelegate {
+    
+    @IBOutlet weak var banner: GADBannerView!
+    
     
     @IBOutlet weak var menuBtn: UIBarButtonItem!
     @IBOutlet weak var hgvXfers: UITextField!
@@ -86,6 +90,12 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        banner.delegate = self
+        banner.adUnitID = "ca-app-pub-2847938944264018/1848681686"
+        banner.rootViewController = self
+        banner.load(GADRequest())
+        
         
         self.navigationItem.title = "Daily Entry"
         self.enterDate.delegate = self
@@ -198,20 +208,14 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
                 self.present(dateAlertInvalid, animated: true, completion: nil)
             } else {
             
-            let dailyDataEntered = UIAlertController(title: "Thank You", message: "You Did Great Today", preferredStyle: UIAlertControllerStyle.alert)
-            dailyDataEntered.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(dailyDataEntered, animated: true, completion: nil)
+//            let dailyDataEntered = UIAlertController(title: "Thank You", message: "You Did Great Today", preferredStyle: UIAlertControllerStyle.alert)
+//            dailyDataEntered.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//            self.present(dailyDataEntered, animated: true, completion: nil)
             
             formatDate()
             appendToArrays()
             saveData()
 
-            //Empty Strings to clear Text Fields
-            
-            hgvXfers.text = ""
-            ehiXfers.text = ""
-            callsTaken.text = ""
-            enterDate.text = ""
 
         }
 
@@ -537,65 +541,125 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         
         
         if month == 1 {
-            hgvJan.append(dailyHgv!)
-            ehiJan.append(dailyEhi!)
-            callsJan.append(dailyCalls!)
-            janDateArray.append(dateEntered!)
+            if janDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                janDateArray.append(dateEntered!)
+                hgvJan.append(dailyHgv!)
+                ehiJan.append(dailyEhi!)
+                callsJan.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 2 {
-            hgvFeb.append(dailyHgv!)
-            ehiFeb.append(dailyEhi!)
-            callsFeb.append(dailyCalls!)
-            febDateArray.append(dateEntered!)
+            if febDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                febDateArray.append(dateEntered!)
+                hgvFeb.append(dailyHgv!)
+                ehiFeb.append(dailyEhi!)
+                callsFeb.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 3 {
-            hgvMar.append(dailyHgv!)
-            ehiMar.append(dailyEhi!)
-            callsMar.append(dailyCalls!)
-            marDateArray.append(dateEntered!)
+            if marDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                marDateArray.append(dateEntered!)
+                hgvMar.append(dailyHgv!)
+                ehiMar.append(dailyEhi!)
+                callsMar.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 4 {
-            hgvApr.append(dailyHgv!)
-            ehiApr.append(dailyEhi!)
-            callsApr.append(dailyCalls!)
-            aprDateArray.append(dateEntered!)
+            if aprDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                aprDateArray.append(dateEntered!)
+                hgvApr.append(dailyHgv!)
+                ehiApr.append(dailyEhi!)
+                callsApr.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 5 {
-            hgvMay.append(dailyHgv!)
-            ehiMay.append(dailyEhi!)
-            callsMay.append(dailyCalls!)
-            mayDateArray.append(dateEntered!)
+            if mayDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                mayDateArray.append(dateEntered!)
+                hgvMay.append(dailyHgv!)
+                ehiMay.append(dailyEhi!)
+                callsMay.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 6 {
-            hgvJun.append(dailyHgv!)
-            ehiJun.append(dailyEhi!)
-            callsJun.append(dailyCalls!)
-            junDateArray.append(dateEntered!)
+            if junDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                junDateArray.append(dateEntered!)
+                hgvJun.append(dailyHgv!)
+                ehiJun.append(dailyEhi!)
+                callsJun.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 7 {
-            hgvJul.append(dailyHgv!)
-            ehiJul.append(dailyEhi!)
-            callsJul.append(dailyCalls!)
-            julDateArray.append(dateEntered!)
+            if julDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                julDateArray.append(dateEntered!)
+                hgvJul.append(dailyHgv!)
+                ehiJul.append(dailyEhi!)
+                callsJul.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 8 {
-            hgvAug.append(dailyHgv!)
-            ehiAug.append(dailyEhi!)
-            callsAug.append(dailyCalls!)
-            augDateArray.append(dateEntered!)
+            if augDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                augDateArray.append(dateEntered!)
+                hgvAug.append(dailyHgv!)
+                ehiAug.append(dailyEhi!)
+                callsAug.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 9 {
-            hgvSep.append(dailyHgv!)
-            ehiSep.append(dailyEhi!)
-            callsSep.append(dailyCalls!)
-            sepDateArray.append(dateEntered!)
+            if sepDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                sepDateArray.append(dateEntered!)
+                hgvSep.append(dailyHgv!)
+                ehiSep.append(dailyEhi!)
+                callsSep.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 10 {
-            hgvOct.append(dailyHgv!)
-            ehiOct.append(dailyEhi!)
-            callsOct.append(dailyCalls!)
-            octDateArray.append(dateEntered!)
+            if octDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                octDateArray.append(dateEntered!)
+                hgvOct.append(dailyHgv!)
+                ehiOct.append(dailyEhi!)
+                callsOct.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 11 {
-            hgvNov.append(dailyHgv!)
-            ehiNov.append(dailyEhi!)
-            callsNov.append(dailyCalls!)
-            novDateArray.append(dateEntered!)
+            if novDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                novDateArray.append(dateEntered!)
+                hgvNov.append(dailyHgv!)
+                ehiNov.append(dailyEhi!)
+                callsNov.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else if month == 12 {
-            hgvDec.append(dailyHgv!)
-            ehiDec.append(dailyEhi!)
-            callsDec.append(dailyCalls!)
-            decDateArray.append(dateEntered!)
+            if decDateArray.contains(dateEntered!) {
+                dateExists()
+            } else {
+                decDateArray.append(dateEntered!)
+                hgvDec.append(dailyHgv!)
+                ehiDec.append(dailyEhi!)
+                callsDec.append(dailyCalls!)
+                dateDoesNotExist()
+            }
         } else {
             print("Something is Wrong")
         }
@@ -754,19 +818,22 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
 
     }
     
-    func configureTextFieldAssets() {
-        self.hgvXfers.alpha = 0.0
-        self.ehiXfers.alpha = 0.0
-        self.callsTaken.alpha = 0.0
-        self.enterDate.alpha = 0.0
-        self.SubmitBtn.isHidden = true
+    func dateExists() {
+        let dateIsFull = UIAlertController(title: " Entry For Date Already Exists", message: "Try Again", preferredStyle: UIAlertControllerStyle.alert)
+        dateIsFull.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(dateIsFull, animated: true, completion: nil)
+    }
+    
+    func dateDoesNotExist() {
+        let dailyDataEntered = UIAlertController(title: "Thank You", message: "You Did Great Today", preferredStyle: UIAlertControllerStyle.alert)
+        dailyDataEntered.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(dailyDataEntered, animated: true, completion: nil)
         
-        self.hgvXfers.center.y += -40
-        self.ehiXfers.center.y += -40
-        self.callsTaken.center.y += -40
-        self.enterDate.center.y += -40
-
-        
+        //Empty Strings to clear Text Fields
+        hgvXfers.text = ""
+        ehiXfers.text = ""
+        callsTaken.text = ""
+        enterDate.text = ""
     }
     
     

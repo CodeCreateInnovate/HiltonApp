@@ -16,6 +16,8 @@
 		DA1519DB1D2F528900A63331 /* YearlyGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */; };
 		DA1D3A581D37E06D00EC516A /* Incentive_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2FA1D2A0953004A38E3 /* Incentive_AppTests.swift */; };
 		DA3AF1491D39F08C00880E73 /* DailyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */; };
+		DA428F361DC04BA800B1D28D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA428F341DC04BA800B1D28D /* Fabric.framework */; };
+		DA428F371DC04BA800B1D28D /* Answers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA428F351DC04BA800B1D28D /* Answers.framework */; };
 		DABB07251D775973007E0755 /* DailyEntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB07241D775973007E0755 /* DailyEntryData.swift */; };
 		DABDB2E61D2A0952004A38E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */; };
 		DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E71D2A0952004A38E3 /* ViewController.swift */; };
@@ -33,6 +35,20 @@
 		DACAF1171D8AF1AA00BEB870 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACAF1161D8AF1AA00BEB870 /* UserDefaults.swift */; };
 		DADA84581D2B678F00EAA9B5 /* DailyEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA84571D2B678F00EAA9B5 /* DailyEntryViewController.swift */; };
 		DADA845A1D2B67BD00EAA9B5 /* SetUsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */; };
+		DADCFF481DC05CA700B1C915 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF461DC05CA700B1C915 /* GoogleMobileAds.framework */; };
+		DADCFF491DC05CA700B1C915 /* Mediation Adapters in Resources */ = {isa = PBXBuildFile; fileRef = DADCFF471DC05CA700B1C915 /* Mediation Adapters */; };
+		DADCFF4B1DC05D2500B1C915 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF4A1DC05D2500B1C915 /* AdSupport.framework */; };
+		DADCFF4D1DC05D2D00B1C915 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF4C1DC05D2D00B1C915 /* AudioToolbox.framework */; };
+		DADCFF4F1DC05D3C00B1C915 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF4E1DC05D3C00B1C915 /* AVFoundation.framework */; };
+		DADCFF511DC05D4F00B1C915 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF501DC05D4F00B1C915 /* CoreGraphics.framework */; };
+		DADCFF531DC05D5600B1C915 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF521DC05D5600B1C915 /* CoreMedia.framework */; };
+		DADCFF551DC05D5D00B1C915 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF541DC05D5D00B1C915 /* CoreTelephony.framework */; };
+		DADCFF581DC05D7C00B1C915 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF561DC05D7C00B1C915 /* EventKit.framework */; };
+		DADCFF591DC05D7C00B1C915 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF571DC05D7C00B1C915 /* EventKitUI.framework */; };
+		DADCFF5B1DC05D8E00B1C915 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF5A1DC05D8E00B1C915 /* MediaPlayer.framework */; };
+		DADCFF5D1DC05D9800B1C915 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF5C1DC05D9800B1C915 /* MessageUI.framework */; };
+		DADCFF5F1DC05DA900B1C915 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF5E1DC05DA900B1C915 /* StoreKit.framework */; };
+		DADCFF611DC05DB000B1C915 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF601DC05DB000B1C915 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +80,8 @@
 		DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyGoalViewController.swift; sourceTree = "<group>"; };
 		DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlyGoalViewController.swift; sourceTree = "<group>"; };
 		DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStatsViewController.swift; sourceTree = "<group>"; };
+		DA428F341DC04BA800B1D28D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		DA428F351DC04BA800B1D28D /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Answers.framework; sourceTree = "<group>"; };
 		DABB07241D775973007E0755 /* DailyEntryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyEntryData.swift; sourceTree = "<group>"; };
 		DABDB2E21D2A0952004A38E3 /* Incentive App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Incentive App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +108,20 @@
 		DACAF1161D8AF1AA00BEB870 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		DADA84571D2B678F00EAA9B5 /* DailyEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyEntryViewController.swift; sourceTree = "<group>"; };
 		DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUsetViewController.swift; sourceTree = "<group>"; };
+		DADCFF461DC05CA700B1C915 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		DADCFF471DC05CA700B1C915 /* Mediation Adapters */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Mediation Adapters"; sourceTree = "<group>"; };
+		DADCFF4A1DC05D2500B1C915 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		DADCFF4C1DC05D2D00B1C915 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DADCFF4E1DC05D3C00B1C915 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DADCFF501DC05D4F00B1C915 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DADCFF521DC05D5600B1C915 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		DADCFF541DC05D5D00B1C915 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DADCFF561DC05D7C00B1C915 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		DADCFF571DC05D7C00B1C915 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		DADCFF5A1DC05D8E00B1C915 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DADCFF5C1DC05D9800B1C915 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DADCFF5E1DC05DA900B1C915 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DADCFF601DC05DB000B1C915 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DF909308D36D6CFDD5A17B70 /* Pods_Incentive_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Incentive_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DEFD1D318FB48648A35CFD /* Pods-Incentive AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Incentive AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Incentive AppTests/Pods-Incentive AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		FFAF6E7A865347C612960C14 /* Pods-Incentive AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Incentive AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Incentive AppUITests/Pods-Incentive AppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +132,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADCFF611DC05DB000B1C915 /* SystemConfiguration.framework in Frameworks */,
+				DADCFF5F1DC05DA900B1C915 /* StoreKit.framework in Frameworks */,
+				DADCFF5D1DC05D9800B1C915 /* MessageUI.framework in Frameworks */,
+				DADCFF5B1DC05D8E00B1C915 /* MediaPlayer.framework in Frameworks */,
+				DADCFF581DC05D7C00B1C915 /* EventKit.framework in Frameworks */,
+				DADCFF591DC05D7C00B1C915 /* EventKitUI.framework in Frameworks */,
+				DADCFF551DC05D5D00B1C915 /* CoreTelephony.framework in Frameworks */,
+				DADCFF531DC05D5600B1C915 /* CoreMedia.framework in Frameworks */,
+				DADCFF511DC05D4F00B1C915 /* CoreGraphics.framework in Frameworks */,
+				DADCFF4F1DC05D3C00B1C915 /* AVFoundation.framework in Frameworks */,
+				DADCFF4D1DC05D2D00B1C915 /* AudioToolbox.framework in Frameworks */,
+				DADCFF4B1DC05D2500B1C915 /* AdSupport.framework in Frameworks */,
+				DA428F371DC04BA800B1D28D /* Answers.framework in Frameworks */,
 				89910F13D270BC54D4E086A6 /* Pods_Incentive_App.framework in Frameworks */,
+				DADCFF481DC05CA700B1C915 /* GoogleMobileAds.framework in Frameworks */,
+				DA428F361DC04BA800B1D28D /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +173,18 @@
 		166B63B0CC88628A2B3EABE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DADCFF601DC05DB000B1C915 /* SystemConfiguration.framework */,
+				DADCFF5E1DC05DA900B1C915 /* StoreKit.framework */,
+				DADCFF5C1DC05D9800B1C915 /* MessageUI.framework */,
+				DADCFF5A1DC05D8E00B1C915 /* MediaPlayer.framework */,
+				DADCFF561DC05D7C00B1C915 /* EventKit.framework */,
+				DADCFF571DC05D7C00B1C915 /* EventKitUI.framework */,
+				DADCFF541DC05D5D00B1C915 /* CoreTelephony.framework */,
+				DADCFF521DC05D5600B1C915 /* CoreMedia.framework */,
+				DADCFF501DC05D4F00B1C915 /* CoreGraphics.framework */,
+				DADCFF4E1DC05D3C00B1C915 /* AVFoundation.framework */,
+				DADCFF4C1DC05D2D00B1C915 /* AudioToolbox.framework */,
+				DADCFF4A1DC05D2500B1C915 /* AdSupport.framework */,
 				DF909308D36D6CFDD5A17B70 /* Pods_Incentive_App.framework */,
 				ABFA5D0876119C8CDD335103 /* Pods_Incentive_AppTests.framework */,
 				048624F7A58C0134ED8F4031 /* Pods_Incentive_AppUITests.framework */,
@@ -149,6 +208,8 @@
 		DABDB2D91D2A0952004A38E3 = {
 			isa = PBXGroup;
 			children = (
+				DA428F341DC04BA800B1D28D /* Fabric.framework */,
+				DA428F351DC04BA800B1D28D /* Answers.framework */,
 				DABDB2E41D2A0952004A38E3 /* Incentive App */,
 				DABDB2F91D2A0953004A38E3 /* Incentive AppTests */,
 				DABDB3041D2A0953004A38E3 /* Incentive AppUITests */,
@@ -171,6 +232,7 @@
 		DABDB2E41D2A0952004A38E3 /* Incentive App */ = {
 			isa = PBXGroup;
 			children = (
+				DADCFF451DC05C5E00B1C915 /* Admob */,
 				DABDB3131D2A09FF004A38E3 /* Model */,
 				DABDB3141D2A0A08004A38E3 /* View */,
 				DABDB3151D2A0A10004A38E3 /* Controller */,
@@ -249,6 +311,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DADCFF451DC05C5E00B1C915 /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				DADCFF461DC05CA700B1C915 /* GoogleMobileAds.framework */,
+				DADCFF471DC05CA700B1C915 /* Mediation Adapters */,
+			);
+			name = Admob;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +333,7 @@
 				DABDB2E01D2A0952004A38E3 /* Resources */,
 				89F2A00FA704053CFDE01AA0 /* [CP] Embed Pods Frameworks */,
 				F79D259DB5184AED0D371180 /* [CP] Copy Pods Resources */,
+				DA428F331DC04B1F00B1D28D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -374,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADCFF491DC05CA700B1C915 /* Mediation Adapters in Resources */,
 				DABDB2F01D2A0952004A38E3 /* LaunchScreen.storyboard in Resources */,
 				DABDB2ED1D2A0952004A38E3 /* Assets.xcassets in Resources */,
 				DABDB2EB1D2A0952004A38E3 /* Main.storyboard in Resources */,
@@ -501,6 +574,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Incentive AppUITests/Pods-Incentive AppUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DA428F331DC04B1F00B1D28D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a0756510e0b5a70c9f4cd814dd7fd65e0d71bdca a3ef9f349866d916f87c9504751dfe755894c14838d7e260f82b38bff64872d2";
 		};
 		F7509689044406400D4F7115 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -714,6 +800,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Incentive\\ App",
+				);
 				INFOPLIST_FILE = "Incentive App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -733,6 +825,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Incentive\\ App",
+				);
 				INFOPLIST_FILE = "Incentive App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

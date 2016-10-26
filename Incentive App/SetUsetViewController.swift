@@ -142,6 +142,7 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
         timeText.underlined()
         hideKeyboardWhenTappedAround()
         self.navigationItem.title = "Set-Uset Calculator"
+        
         self.timeText.delegate = self
         
         let toolBar = UIToolbar()
@@ -184,6 +185,7 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
             timeLbl.text = "\(roundTwoPlaces1) Hours and \(setUset[roundTwoPlaces2]!) Minutes "
             remainingTime.text = "of SET / USET Time Remaining."
             
+            
         } else {
             timeLbl.text = "PLEASE ENTER A VALID VALUE (IE. 3.93)"
         }
@@ -204,6 +206,8 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
         } else {
             print("Thank You!")
         }
+        donePicker()
+        cancelPicker()
     }
     
     func donePicker() {

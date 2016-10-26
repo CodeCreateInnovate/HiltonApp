@@ -1,15 +1,18 @@
 PODS:
+  - Google-Mobile-Ads-SDK (7.13.1)
   - KDCircularProgress (1.5.2)
   - TextFieldEffects (1.3.0)
 
 DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
   - KDCircularProgress
   - TextFieldEffects
 
 SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 41c963a8aee9419e1c87bc5b6aa8d4e4ef905555
   KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
   TextFieldEffects: ef594746f17997c813e07633f8ae5acaf9b04f27
 
-PODFILE CHECKSUM: 3fb9dcd5100879a8ad0d1cc63d98626ca6ee9656
+PODFILE CHECKSUM: 1f5fc374fc04ba5b93d9e0d344f8d4308f4e5fb7
 
 COCOAPODS: 1.1.1
