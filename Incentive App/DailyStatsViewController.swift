@@ -25,22 +25,16 @@ class DailyStatsViewController: UIViewController {
     @IBOutlet weak var monthlyRatePace: UILabel!
     @IBOutlet weak var yearlyRatePace: UILabel!
     
-    
     @IBOutlet weak var dailyRate: UILabel!
     @IBOutlet weak var monthlyRate: UILabel!
     @IBOutlet weak var yearlyRate: UILabel!
-    
-    
+
     @IBOutlet weak var menuBtn: UIBarButtonItem!
 
     
     var dailyTotal = String()
     var monthlyTotal = String()
     var yearlyTotal = String()
-    
-    
-    
-    
     
     //Set Arrays for Monthly HGV
     var hgvJan : [Int] = [0]

@@ -11,9 +11,7 @@ import UIKit
 class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     var window: UIWindow?
-    
     var pageViewController: UIPageViewController!
-
     var pageTitles: NSArray!
     var pageImages: NSArray!
     
@@ -21,9 +19,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
-        
         self.pageTitles = NSArray(objects: "HGV / EHI","Calculate Sick Time", "Set Goals", "View Statistics")
         self.pageImages = NSArray(objects: "","Sick_Time","Set_Goals","View_Stats")
         

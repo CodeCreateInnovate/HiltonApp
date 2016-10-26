@@ -106,10 +106,6 @@ class DailyGoalViewController: UIViewController, UIPickerViewDataSource, UIPicke
 
     }
     
-    
-    
-
-    
     // Save Button that Holds Alerts For Checking Validity of Text Fields
     
     @IBAction func saveBtn(sender: AnyObject) {

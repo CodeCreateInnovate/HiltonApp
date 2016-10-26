@@ -18,7 +18,6 @@
 		DA3AF1491D39F08C00880E73 /* DailyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */; };
 		DA428F361DC04BA800B1D28D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA428F341DC04BA800B1D28D /* Fabric.framework */; };
 		DA428F371DC04BA800B1D28D /* Answers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA428F351DC04BA800B1D28D /* Answers.framework */; };
-		DABB07251D775973007E0755 /* DailyEntryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABB07241D775973007E0755 /* DailyEntryData.swift */; };
 		DABDB2E61D2A0952004A38E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */; };
 		DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E71D2A0952004A38E3 /* ViewController.swift */; };
 		DABDB2EB1D2A0952004A38E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABDB2E91D2A0952004A38E3 /* Main.storyboard */; };
@@ -32,7 +31,6 @@
 		DABDB3221D2B4F20004A38E3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDB3211D2B4F20004A38E3 /* SWRevealViewController.m */; };
 		DABDB3241D2B50C9004A38E3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB3231D2B50C9004A38E3 /* AccountViewController.swift */; };
 		DABDB3261D2B533D004A38E3 /* BackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB3251D2B533D004A38E3 /* BackTableViewController.swift */; };
-		DACAF1171D8AF1AA00BEB870 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACAF1161D8AF1AA00BEB870 /* UserDefaults.swift */; };
 		DADA84581D2B678F00EAA9B5 /* DailyEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA84571D2B678F00EAA9B5 /* DailyEntryViewController.swift */; };
 		DADA845A1D2B67BD00EAA9B5 /* SetUsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */; };
 		DADCFF481DC05CA700B1C915 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADCFF461DC05CA700B1C915 /* GoogleMobileAds.framework */; };
@@ -82,7 +80,6 @@
 		DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStatsViewController.swift; sourceTree = "<group>"; };
 		DA428F341DC04BA800B1D28D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		DA428F351DC04BA800B1D28D /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Answers.framework; sourceTree = "<group>"; };
-		DABB07241D775973007E0755 /* DailyEntryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyEntryData.swift; sourceTree = "<group>"; };
 		DABDB2E21D2A0952004A38E3 /* Incentive App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Incentive App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABDB2E71D2A0952004A38E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +102,6 @@
 		DABDB3211D2B4F20004A38E3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		DABDB3231D2B50C9004A38E3 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		DABDB3251D2B533D004A38E3 /* BackTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableViewController.swift; sourceTree = "<group>"; };
-		DACAF1161D8AF1AA00BEB870 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		DADA84571D2B678F00EAA9B5 /* DailyEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyEntryViewController.swift; sourceTree = "<group>"; };
 		DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUsetViewController.swift; sourceTree = "<group>"; };
 		DADCFF461DC05CA700B1C915 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -267,8 +263,6 @@
 		DABDB3131D2A09FF004A38E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DABB07241D775973007E0755 /* DailyEntryData.swift */,
-				DACAF1161D8AF1AA00BEB870 /* UserDefaults.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -639,10 +633,8 @@
 				DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */,
 				DA1519D91D2F525800A63331 /* MonthlyGoalViewController.swift in Sources */,
 				DABDB3171D2A0CF8004A38E3 /* ContentViewController.swift in Sources */,
-				DACAF1171D8AF1AA00BEB870 /* UserDefaults.swift in Sources */,
 				DABDB3261D2B533D004A38E3 /* BackTableViewController.swift in Sources */,
 				DABDB2E61D2A0952004A38E3 /* AppDelegate.swift in Sources */,
-				DABB07251D775973007E0755 /* DailyEntryData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

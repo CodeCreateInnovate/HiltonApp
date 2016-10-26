@@ -243,9 +243,6 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         dateFormatter1.dateStyle = .medium
         dateFormatter1.timeStyle = .none
         enterDate.text = dateFormatter1.string(from: datePicker.date)
-        
-
-
 
     }
     
@@ -256,11 +253,10 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         enterDate.resignFirstResponder()
     }
     
+    //Load HGV Data
     func loadData() {
         let dailyEntryDefaults = UserDefaults.standard
-        //Load HGV
-        print("Begin HGV")
-        
+
         if (dailyEntryDefaults.object(forKey: "janHgvTotal") != nil) {
             hgvJan = dailyEntryDefaults.object(forKey: "janHgvTotal") as! [Int]
             print(hgvJan)
@@ -320,11 +316,10 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
             hgvDec = dailyEntryDefaults.object(forKey: "decHgvTotal") as! [Int]
             print(hgvDec)
         }
-        print("End HGV")
-        print("Begin EHI")
+
         
         
-        //Load EHI
+        //Load EHI Data
         if (dailyEntryDefaults.object(forKey: "janEhiTotal") != nil) {
             ehiJan = dailyEntryDefaults.object(forKey: "janEhiTotal") as! [Int]
             print(ehiJan)
@@ -384,13 +379,9 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
             ehiDec = dailyEntryDefaults.object(forKey: "decEhiTotal") as! [Int]
             print(ehiDec)
         }
+
         
-        print("End Ehi")
-        print("Begin Calls")
-        
-        
-        
-        //Load Calls
+        //Load Calls Data
         if (dailyEntryDefaults.object(forKey: "janTotalCalls") != nil) {
             callsJan = dailyEntryDefaults.object(forKey: "janTotalCalls") as! [Int]
             print(callsJan)
@@ -449,12 +440,9 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
             callsDec = dailyEntryDefaults.object(forKey: "decTotalCalls") as! [Int]
             print(callsDec)
         }
+
         
-        print("End Calls")
-        print("Load Dates")
-        
-        
-        //Load Dates
+        //Load Date Data
         if (dailyEntryDefaults.object(forKey: "janDate") != nil) {
             janDateArray = dailyEntryDefaults.object(forKey: "janDate") as! [String]
             print(janDateArray)
@@ -514,8 +502,7 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
             decDateArray = dailyEntryDefaults.object(forKey: "decDate") as! [String]
             print(decDateArray)
         }
-        
-        print("End Dates")
+
         
     }
     
@@ -525,7 +512,6 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         let dailyHgv = Int(hgvXfers.text!)
         let dailyEhi = Int(ehiXfers.text!)
         let dailyCalls = Int(callsTaken.text!)
-        
         let dateEntered = enterDate.text
         print(dateEntered)
         
@@ -534,8 +520,6 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         let components = calendar?.components([.month , .year], from: date as Date)
         let year =  components?.year
         let month = components?.month
-        
-        
         print(year)
         print(month)
         

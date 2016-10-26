@@ -20,17 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
      func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-
-        
-        
-        
         let navMenu = UINavigationBar.appearance()
         navMenu.tintColor = UIColor.white
         navMenu.barTintColor = UIColor(red: 15/255, green: 43/255, blue: 124/255, alpha: 1.0)
         navMenu.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
-
-        
-        
+  
         UIApplication.shared.statusBarStyle = .lightContent
         
         let pageController = UIPageControl.appearance()

@@ -16,18 +16,12 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
     @IBOutlet weak var editDailyGoal: UITextField!
     @IBOutlet weak var editMonthlyGoal: UITextField!
     @IBOutlet weak var editYearlyGoal: UITextField!
-    
-    
 
-    
     //Arrays To Hold Counts For Pickers
     var daily : [Int] = []
     var monthly : [Int] = []
     var yearly : [Int] = []
     
-
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -87,8 +81,6 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
             editLastName.text = (lastName)
             
         }
-
-        
 
         self.editFirstName.delegate = self
         self.editLastName.delegate = self
