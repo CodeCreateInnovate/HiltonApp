@@ -127,7 +127,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hlC-DC-an7" id="glk-To-aa4">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-vU-1hX">
@@ -155,7 +155,7 @@
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yry-fv-r89" id="rxq-Ir-Ifb">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Entry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwZ-dT-fRl">
@@ -183,7 +183,7 @@
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cY3-sh-VBO" id="db2-aj-PTz">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set / Uset Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzM-x8-sUL">
@@ -211,7 +211,7 @@
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BhE-Zz-g81" id="AcZ-nQ-eJc">
-                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SK-hP-mZT">
@@ -263,7 +263,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nf-Ml-V9q" customClass="CustomButton" customModule="Incentive_App" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.69803921570000005" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="DLw-rq-yFQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="TU9-Fa-6fe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="Submit">
@@ -277,7 +277,7 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rd8-po-4Cf">
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="HGV Transfers" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ESG-TD-uOi" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter HGV Transfers" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ESG-TD-uOi" customClass="HoshiTextField" customModule="TextFieldEffects">
                                                 <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
@@ -288,9 +288,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                         <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -301,7 +298,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86c-hf-hCv">
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EHI Transfers" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-Rm-owa" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter EHI Transfers" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="F3Y-Rm-owa" customClass="HoshiTextField" customModule="TextFieldEffects">
                                                 <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
@@ -312,9 +309,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                         <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -325,7 +319,7 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ja9-rm-QUS">
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Calls Taken" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZSM-bn-XM1" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Calls Taken" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZSM-bn-XM1" customClass="HoshiTextField" customModule="TextFieldEffects">
                                                 <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
@@ -337,9 +331,6 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                         <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
@@ -349,18 +340,18 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Q1-aC-cUJ" customClass="GADBannerView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Date" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zJ1-Pr-lQA" customClass="HoshiTextField" customModule="TextFieldEffects">
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="shC-AL-bUL"/>
+                                    <constraint firstAttribute="height" constant="50" id="sNO-1E-tlE"/>
                                 </constraints>
                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                         <color key="value" red="0.41176470590000003" green="0.69803921570000005" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
@@ -372,25 +363,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Q1-aC-cUJ" customClass="GADBannerView">
-                                <frame key="frameInset" minX="33" minY="539" width="310" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zJ1-Pr-lQA" firstAttribute="top" secondItem="2pF-85-Utk" secondAttribute="bottom" constant="50" id="Khd-3p-OEc"/>
-                            <constraint firstItem="2Nf-Ml-V9q" firstAttribute="bottom" secondItem="jYU-yl-MXl" secondAttribute="top" id="Kwm-H4-BQf"/>
-                            <constraint firstItem="zJ1-Pr-lQA" firstAttribute="centerX" secondItem="2Nf-Ml-V9q" secondAttribute="centerX" id="RR5-hp-GlD"/>
-                            <constraint firstItem="2Nf-Ml-V9q" firstAttribute="top" secondItem="0Q1-aC-cUJ" secondAttribute="bottom" id="UYT-LS-tsv"/>
-                            <constraint firstItem="2Nf-Ml-V9q" firstAttribute="leading" secondItem="abz-w4-CtN" secondAttribute="leading" id="ZXG-sK-usf"/>
-                            <constraint firstItem="2pF-85-Utk" firstAttribute="leading" secondItem="zJ1-Pr-lQA" secondAttribute="leading" id="Zdh-tR-q99"/>
-                            <constraint firstAttribute="trailing" secondItem="2Nf-Ml-V9q" secondAttribute="trailing" id="dgv-tm-OYq"/>
-                            <constraint firstItem="0Q1-aC-cUJ" firstAttribute="centerX" secondItem="abz-w4-CtN" secondAttribute="centerX" id="gUF-jG-aN0"/>
-                            <constraint firstItem="2pF-85-Utk" firstAttribute="top" secondItem="bcp-g4-FKf" secondAttribute="bottom" constant="75" id="m5O-Eh-zCD"/>
-                            <constraint firstAttribute="bottom" secondItem="zJ1-Pr-lQA" secondAttribute="bottom" constant="278" id="pz6-rd-bUZ"/>
-                            <constraint firstItem="2pF-85-Utk" firstAttribute="trailing" secondItem="zJ1-Pr-lQA" secondAttribute="trailing" id="xLv-fX-GXv"/>
-                            <constraint firstItem="2pF-85-Utk" firstAttribute="leading" secondItem="abz-w4-CtN" secondAttribute="leadingMargin" constant="17" id="zGX-eB-HVl"/>
+                            <constraint firstItem="zJ1-Pr-lQA" firstAttribute="top" secondItem="2pF-85-Utk" secondAttribute="bottom" id="4Gz-To-W2A"/>
+                            <constraint firstItem="2Nf-Ml-V9q" firstAttribute="bottom" secondItem="jYU-yl-MXl" secondAttribute="top" id="7wN-5s-bQ4"/>
+                            <constraint firstItem="0Q1-aC-cUJ" firstAttribute="leading" secondItem="abz-w4-CtN" secondAttribute="leadingMargin" constant="36" id="FIG-j6-gwf"/>
+                            <constraint firstItem="2Nf-Ml-V9q" firstAttribute="leading" secondItem="abz-w4-CtN" secondAttribute="leading" id="G7U-F8-tmN"/>
+                            <constraint firstItem="zJ1-Pr-lQA" firstAttribute="centerX" secondItem="2Nf-Ml-V9q" secondAttribute="centerX" id="N1B-tB-jyk"/>
+                            <constraint firstItem="0Q1-aC-cUJ" firstAttribute="top" secondItem="jYU-yl-MXl" secondAttribute="bottom" constant="60" id="SXB-b0-6H1"/>
+                            <constraint firstItem="2pF-85-Utk" firstAttribute="leading" secondItem="zJ1-Pr-lQA" secondAttribute="leading" id="WoS-fD-1C4"/>
+                            <constraint firstItem="zJ1-Pr-lQA" firstAttribute="top" secondItem="abz-w4-CtN" secondAttribute="top" constant="245" id="bYh-v8-yWZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Q1-aC-cUJ" secondAttribute="trailing" constant="-58" id="iWB-2J-LGf"/>
+                            <constraint firstAttribute="trailing" secondItem="2Nf-Ml-V9q" secondAttribute="trailing" id="jNP-LN-cSi"/>
+                            <constraint firstItem="2pF-85-Utk" firstAttribute="top" secondItem="bcp-g4-FKf" secondAttribute="bottom" constant="75" id="nkS-Kb-b83"/>
+                            <constraint firstItem="2pF-85-Utk" firstAttribute="trailing" secondItem="zJ1-Pr-lQA" secondAttribute="trailing" id="pjC-Cq-eWc"/>
+                            <constraint firstAttribute="bottom" secondItem="0Q1-aC-cUJ" secondAttribute="bottom" constant="-110" id="pz2-0r-cxo"/>
+                            <constraint firstItem="2pF-85-Utk" firstAttribute="leading" secondItem="abz-w4-CtN" secondAttribute="leadingMargin" constant="17" id="vkx-Md-Jkq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EaC-wV-ePV">
@@ -427,7 +416,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQm-Zx-hQR" customClass="CustomButton" customModule="Incentive_App" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="ymh-tl-we7"/>
+                                    <constraint firstAttribute="height" constant="50" id="ymh-tl-we7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="Submit">
@@ -444,7 +433,7 @@
                                     <constraint firstAttribute="height" constant="50" id="oYc-Df-x8n"/>
                                 </constraints>
                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
@@ -453,15 +442,12 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJr-Ok-Je6" userLabel="YouHave">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="sJr-Ok-Je6" userLabel="YouHave">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="LO4-MB-5UP"/>
                                 </constraints>
@@ -469,7 +455,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh7-Tx-A8e" userLabel="SetUset">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nh7-Tx-A8e" userLabel="SetUset">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="94B-Dh-L8r"/>
                                 </constraints>
@@ -477,7 +463,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have 0 Hours and 0 Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7Z-s7-3KM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have 0 Hours and 0 Minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="x7Z-s7-3KM">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="PEt-yv-FAZ"/>
                                 </constraints>
@@ -668,20 +654,17 @@
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TCa-Vf-oSI" userLabel="NameTextFields">
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-BE-wZ4" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-BE-wZ4" customClass="HoshiTextField" customModule="TextFieldEffects">
                                                 <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="0ES-Fh-fm3"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                                         <color key="value" red="0.41176470590000003" green="0.69803921570000005" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -697,17 +680,14 @@
                                                     <constraint firstAttribute="height" constant="50" id="3vb-jK-fyT"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                                         <color key="value" red="0.41176470590000003" green="0.69803921570000005" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
+                                                        <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -723,7 +703,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjn-g1-caL" customClass="CustomButton" customModule="Incentive_App" customModuleProvider="target">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="fnb-z1-Sjs"/>
+                                    <constraint firstAttribute="height" constant="50" id="fnb-z1-Sjs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="Save">
@@ -832,17 +812,14 @@
                                                     <constraint firstAttribute="width" constant="275" id="dky-8L-Vv3"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                                         <color key="value" red="0.41176470590000003" green="0.69803921570000005" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
+                                                        <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -859,7 +836,7 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdS-ot-98G" customClass="CustomButton" customModule="Incentive_App" customModuleProvider="target">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="IB0-Ab-NtR"/>
+                                    <constraint firstAttribute="height" constant="50" id="IB0-Ab-NtR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="Save">
@@ -915,7 +892,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPA-Et-KLL" customClass="CustomButton" customModule="Incentive_App" customModuleProvider="target">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="5TC-i2-E01"/>
+                                    <constraint firstAttribute="height" constant="50" id="5TC-i2-E01"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="Save">
@@ -980,17 +957,14 @@
                                                     <constraint firstAttribute="width" constant="275" id="k3s-ti-hx2"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                                         <color key="value" red="0.41176470590000003" green="0.69803921570000005" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
+                                                        <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1052,7 +1026,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6D-JV-xaj" customClass="CustomButton" customModule="Incentive_App" customModuleProvider="target">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="NBC-gE-DfW"/>
+                                    <constraint firstAttribute="height" constant="50" id="NBC-gE-DfW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="Save">
@@ -1117,17 +1091,14 @@
                                                     <constraint firstAttribute="height" constant="50" id="tcf-hf-u8L"/>
                                                 </constraints>
                                                 <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                                         <color key="value" red="0.41176470590000003" green="0.69803921570000005" blue="0.035294117649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
-                                                        <real key="value" value="1"/>
+                                                        <color key="value" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1255,7 +1226,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PAz-cQ-ovh" userLabel="ProgressViewStack">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1mk-f8-0ye">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xys-h7-DWG" userLabel="PaceLabels">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Daily Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="XXA-9r-XLw">
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Monthly Goal Pace:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="hR3-D6-TI8">
+                                                <color key="backgroundColor" red="0.30196078430000001" green="0.69803921570000005" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Yearly Goal Pace: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="KcD-Bf-A9d">
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cse-8b-FEQ" userLabel="PaceResults">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Daily Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="h9B-Ik-EmY">
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Monthly Pace:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-4H-yVJ">
+                                                <color key="backgroundColor" red="0.30196078430000001" green="0.69803921570000005" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Yearly Goal Pace: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="YmO-ua-JUg">
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="PAz-cQ-ovh" userLabel="ProgressViewStack">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irg-vX-poN" userLabel="DailyRing" customClass="KDCircularProgress" customModule="KDCircularProgress">
                                         <subviews>
@@ -1404,12 +1423,12 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwx-wE-6Hh" userLabel="Monthly">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hwx-wE-6Hh" userLabel="Monthly">
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yearly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-wV-FMn">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yearly" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-wV-FMn">
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1417,71 +1436,23 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.69803921570000005" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="-50" translatesAutoresizingMaskIntoConstraints="NO" id="VWr-MT-iKH" userLabel="PaceStack">
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="xys-h7-DWG" userLabel="PaceLabels">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Daily Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXA-9r-XLw">
-                                                <color key="backgroundColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Monthly Goal Pace:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR3-D6-TI8">
-                                                <color key="backgroundColor" red="0.30196078430000001" green="0.69803921570000005" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Yearly Goal Pace: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcD-Bf-A9d">
-                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="cse-8b-FEQ" userLabel="PaceResults">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Daily Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9B-Ik-EmY">
-                                                <color key="backgroundColor" red="0.99607843139999996" green="0.73333333329999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Monthly Pace:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLd-4H-yVJ">
-                                                <color key="backgroundColor" red="0.30196078430000001" green="0.69803921570000005" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Yearly Goal Pace: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmO-ua-JUg">
-                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.021041273051871021" green="0.19417617448623756" blue="0.43559644670050757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="VWr-MT-iKH" secondAttribute="trailing" id="2OE-fh-wIh"/>
                             <constraint firstItem="PAz-cQ-ovh" firstAttribute="centerX" secondItem="K9B-6o-uVx" secondAttribute="centerX" id="2u4-FA-9t9"/>
-                            <constraint firstItem="PAz-cQ-ovh" firstAttribute="leading" secondItem="hEM-ey-Pum" secondAttribute="trailing" constant="-10" id="5j8-R0-jEX"/>
+                            <constraint firstItem="PAz-cQ-ovh" firstAttribute="leading" secondItem="hEM-ey-Pum" secondAttribute="trailing" id="5j8-R0-jEX"/>
                             <constraint firstItem="PAz-cQ-ovh" firstAttribute="centerX" secondItem="K9B-6o-uVx" secondAttribute="centerX" id="DfY-sJ-2KZ"/>
-                            <constraint firstItem="VWr-MT-iKH" firstAttribute="leading" secondItem="K9B-6o-uVx" secondAttribute="leading" id="Qqe-ND-pL0"/>
-                            <constraint firstItem="VWr-MT-iKH" firstAttribute="top" secondItem="ZqA-Zy-TnI" secondAttribute="bottom" id="XDe-KL-Ebs"/>
+                            <constraint firstItem="1mk-f8-0ye" firstAttribute="top" secondItem="ZqA-Zy-TnI" secondAttribute="bottom" id="JRC-mi-C0L"/>
+                            <constraint firstAttribute="trailing" secondItem="1mk-f8-0ye" secondAttribute="trailing" id="K4j-N4-fhD"/>
+                            <constraint firstItem="hEM-ey-Pum" firstAttribute="top" secondItem="1mk-f8-0ye" secondAttribute="bottom" constant="5" id="WAq-IN-vLc"/>
                             <constraint firstItem="hEM-ey-Pum" firstAttribute="leading" secondItem="K9B-6o-uVx" secondAttribute="leadingMargin" constant="8" id="Z7r-xY-iZU"/>
                             <constraint firstItem="PAz-cQ-ovh" firstAttribute="top" secondItem="K9B-6o-uVx" secondAttribute="topMargin" constant="180" id="ajW-WV-avn"/>
-                            <constraint firstItem="fIP-iY-nme" firstAttribute="top" secondItem="PAz-cQ-ovh" secondAttribute="bottom" constant="20" id="cne-kq-7kP"/>
+                            <constraint firstItem="fIP-iY-nme" firstAttribute="top" secondItem="PAz-cQ-ovh" secondAttribute="bottom" constant="5" id="cne-kq-7kP"/>
                             <constraint firstItem="PAz-cQ-ovh" firstAttribute="centerY" secondItem="K9B-6o-uVx" secondAttribute="centerY" id="eqS-XY-Z3M"/>
-                            <constraint firstItem="fIP-iY-nme" firstAttribute="top" secondItem="hEM-ey-Pum" secondAttribute="bottom" constant="20" id="h7z-I8-geG"/>
+                            <constraint firstItem="fIP-iY-nme" firstAttribute="top" secondItem="hEM-ey-Pum" secondAttribute="bottom" constant="5" id="h7z-I8-geG"/>
+                            <constraint firstItem="1mk-f8-0ye" firstAttribute="leading" secondItem="K9B-6o-uVx" secondAttribute="leading" id="mtT-LW-X4U"/>
                             <constraint firstItem="hEM-ey-Pum" firstAttribute="top" secondItem="ZqA-Zy-TnI" secondAttribute="bottom" constant="116" id="paz-xw-EUc"/>
                             <constraint firstItem="hEM-ey-Pum" firstAttribute="centerY" secondItem="K9B-6o-uVx" secondAttribute="centerY" constant="8" id="tZZ-9R-wOv"/>
-                            <constraint firstItem="hEM-ey-Pum" firstAttribute="top" secondItem="VWr-MT-iKH" secondAttribute="bottom" constant="10" id="yZh-Ub-d4X"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -1580,7 +1551,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3gb-7f-b4o"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -1596,7 +1567,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HAi-M3-4mg"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -1612,7 +1583,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="zNu-Fe-9gf"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <userDefinedRuntimeAttributes>
@@ -1628,7 +1599,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LaA-yJ-Jhz"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -1644,7 +1615,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9AK-M8-7Rk"/>
                                 </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <userDefinedRuntimeAttributes>
@@ -1659,7 +1630,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPo-2W-xPl" customClass="CustomButton" customModule="Incentive_App" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.30196078430000001" green="0.69803921570000005" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="MhF-Lp-NAY"/>
+                                    <constraint firstAttribute="height" constant="50" id="MhF-Lp-NAY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="Save">
@@ -1669,6 +1640,13 @@
                                     <action selector="saveButtonWithSender:" destination="WKA-fS-G6G" eventType="touchUpInside" id="g2v-TO-IsQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amn-0p-auI" customClass="GADBannerView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="n3N-mr-J90"/>
+                                    <constraint firstAttribute="height" constant="50" id="niD-Ic-ZXs"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -1685,6 +1663,7 @@
                             <constraint firstItem="LPo-2W-xPl" firstAttribute="centerX" secondItem="JL5-xP-K5Q" secondAttribute="centerX" id="ESP-AA-GpG"/>
                             <constraint firstAttribute="trailing" secondItem="HMe-WD-rNc" secondAttribute="trailing" constant="8" id="JQq-Bn-UzL"/>
                             <constraint firstItem="HMe-WD-rNc" firstAttribute="leading" secondItem="JL5-xP-K5Q" secondAttribute="leading" constant="8" id="MfF-WA-Qcs"/>
+                            <constraint firstItem="LPo-2W-xPl" firstAttribute="top" secondItem="Amn-0p-auI" secondAttribute="bottom" constant="8" id="PPY-f9-nhC"/>
                             <constraint firstItem="e9H-mF-Lkf" firstAttribute="top" secondItem="LPo-2W-xPl" secondAttribute="bottom" id="Qna-mH-lf2"/>
                             <constraint firstItem="ajE-tC-jA1" firstAttribute="top" secondItem="Gc0-GV-dTs" secondAttribute="bottom" id="RpP-kj-yrv"/>
                             <constraint firstItem="Hkc-ze-bgt" firstAttribute="top" secondItem="NFT-gn-yMH" secondAttribute="bottom" id="Web-el-hem"/>
@@ -1695,6 +1674,7 @@
                             <constraint firstAttribute="trailing" secondItem="0jc-RC-Dzi" secondAttribute="trailing" constant="8" id="fq8-DR-Y4Y"/>
                             <constraint firstAttribute="trailing" secondItem="jhr-Na-W1n" secondAttribute="trailing" constant="8" id="ii1-dw-r5r"/>
                             <constraint firstItem="0jc-RC-Dzi" firstAttribute="leading" secondItem="JL5-xP-K5Q" secondAttribute="leading" constant="8" id="jY9-nq-gBG"/>
+                            <constraint firstItem="Amn-0p-auI" firstAttribute="centerX" secondItem="JL5-xP-K5Q" secondAttribute="centerX" id="kBi-Pc-aMb"/>
                             <constraint firstItem="e9H-mF-Lkf" firstAttribute="top" secondItem="LPo-2W-xPl" secondAttribute="bottom" id="mw8-UN-r1P"/>
                             <constraint firstItem="GME-XL-D9n" firstAttribute="leading" secondItem="JL5-xP-K5Q" secondAttribute="leading" constant="8" id="olM-Hd-bzZ"/>
                             <constraint firstItem="jhr-Na-W1n" firstAttribute="leading" secondItem="JL5-xP-K5Q" secondAttribute="leading" constant="8" id="pqn-om-b9w"/>
@@ -1722,6 +1702,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="banner" destination="Amn-0p-auI" id="NxA-D9-n03"/>
                         <outlet property="editDailyGoal" destination="jhr-Na-W1n" id="yiR-KI-qAH"/>
                         <outlet property="editFirstName" destination="Hkc-ze-bgt" id="umv-ZL-X9o"/>
                         <outlet property="editLastName" destination="GME-XL-D9n" id="hoR-dj-uiL"/>
@@ -1754,17 +1735,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Incentive_Logo" width="204" height="300"/>
+        <image name="Incentive_Logo" width="1024" height="1024"/>
         <image name="backbutton" width="10" height="17"/>
         <image name="forwardbutton" width="10" height="17"/>
         <image name="menubtn" width="20" height="14"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Kkh-Hn-Es1"/>
         <segue reference="VNI-Uk-xTj"/>
-        <segue reference="281-Hc-0zT"/>
-        <segue reference="csm-bL-CFg"/>
-        <segue reference="VlH-dd-5S7"/>
-        <segue reference="HMx-sV-ulp"/>
+        <segue reference="gEW-Gr-m8R"/>
+        <segue reference="pua-mI-eVg"/>
+        <segue reference="oZC-vu-H5O"/>
+        <segue reference="HhV-Qi-2H4"/>
+        <segue reference="1rw-YD-PxV"/>
     </inferredMetricsTieBreakers>
 </document>

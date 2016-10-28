@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
+class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate, GADBannerViewDelegate {
 
     @IBOutlet weak var menuBtn: UIBarButtonItem!
     @IBOutlet weak var editFirstName: UITextField!
@@ -17,6 +18,8 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
     @IBOutlet weak var editMonthlyGoal: UITextField!
     @IBOutlet weak var editYearlyGoal: UITextField!
 
+    @IBOutlet weak var banner: GADBannerView!
+
     //Arrays To Hold Counts For Pickers
     var daily : [Int] = []
     var monthly : [Int] = []
@@ -24,6 +27,11 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        banner.delegate = self
+        banner.adUnitID = "ca-app-pub-2847938944264018/1848681686"
+        banner.rootViewController = self
+        banner.load(GADRequest())
     
         //Function Calls
         
