@@ -512,29 +512,30 @@ class DailyStatsViewController: UIViewController {
         let hgvEhiDayTotal = hgv + ehi
         print(hgvEhiDayTotal)
         let newTotal = Double(hgvEhiDayTotal) / Double(dTotal)! * 100
+        print(newTotal)
         dailyLabel.text = "\(Int(newTotal))% of Goal"
         let dAngle = (newTotal * 360) / 100
         if newTotal < 5.1 {
-            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $.25 = $\(Float(hgvEhiDayTotal) * 0.25)  "
+            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $.25 = $\(String(format: "%.2f", Double(hgvEhiDayTotal) * 0.25))  "
         } else if newTotal >= 5.1 && newTotal <= 10.0 {
-            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $.50 = $\(String(Double(hgvEhiDayTotal) * 0.50))  "
+            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $.50 = $\(String(format: "%.2f", Double(hgvEhiDayTotal) * 0.50))  "
         } else if newTotal >= 10.1 && newTotal <= 15.0 {
-            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $.75 = $\(String(Double(hgvEhiDayTotal) * 0.75))  "
+            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $.75 = $\(String(format: "%.2f", Double(hgvEhiDayTotal) * 0.75))  "
         } else if newTotal >= 15.1 && newTotal <= 20.0 {
-            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $1.00 = $\(String(Double(hgvEhiDayTotal) * 1.00))  "
+            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $1.00 = $\(String(format: "%.2f", Double(hgvEhiDayTotal) * 1.00))  "
         } else if newTotal >= 20.1 && newTotal <= 25.0 {
-            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $1.25 = $\(String(Double(hgvEhiDayTotal) * 1.25))  "
+            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $1.25 = $\(String(format: "%.2f", Double(hgvEhiDayTotal) * 1.25))  "
         } else if newTotal >= 25.1 && newTotal <= 30.0 {
-            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $1.50 = $\(String(Double(hgvEhiDayTotal) * 1.50))  "
+            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $1.50 = $\(String(format: "%.2f", Double(hgvEhiDayTotal) * 1.50))  "
         } else if newTotal >= 30.1 && newTotal <= 35.0 {
-            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $1.75 = $\(String(Double(hgvEhiDayTotal) * 1.75))  "
+            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $1.75 = $\(String(format: "%.2f", Double(hgvEhiDayTotal) * 1.75))  "
         } else if newTotal > 35.0 {
-            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $2.00 = $\(Float(hgvEhiDayTotal) * 2.00)  "
+            dailyRatePace.text = "  \(hgvEhiDayTotal) xfers @ $2.00 = $\(String(format: "%.2f", Float(hgvEhiDayTotal) * 2.00))  "
         }
         
         // Animate Circles
         
-        dailyProgress.animate(0, toAngle: dAngle, duration: 0.5) { completed in
+        dailyProgress.animate(0, toAngle: dAngle, duration: 2.0) { completed in
             if completed {
                 print("Animation Stopped, Completed")
             } else {
@@ -545,29 +546,30 @@ class DailyStatsViewController: UIViewController {
     
     func calcMonthAngle(redHgv: Int, redEhi: Int, mTotal: String) {
         let hgvEhiMonthTotal = redHgv + redEhi
-        let monNewTotal = (Double(hgvEhiMonthTotal) / Double(mTotal)!) * 100
+        print(mTotal)
+        let monNewTotal = Double(hgvEhiMonthTotal) / Double(mTotal)! * 100
         monthlyLabel.text = "\(Int(monNewTotal))% of Goal"
         let monAngle = (monNewTotal * 360) / 100
         if monNewTotal < 5.1 {
-            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $.25 = $\(String(Double(hgvEhiMonthTotal) * 0.25))  "
+            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $.25 = $\(String(format: "%.2f", Double(hgvEhiMonthTotal) * 0.25))  "
         } else if monNewTotal >= 5.1 && monNewTotal <= 10.0 {
-            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $.50 = $\(String(Double(hgvEhiMonthTotal) * 0.50))  "
+            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $.50 = $\(String(format: "%.2f", Double(hgvEhiMonthTotal) * 0.50))  "
         } else if monNewTotal >= 10.1 && monNewTotal <= 15.0 {
-            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $.75 = $\(String(Double(hgvEhiMonthTotal) * 0.75))  "
+            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $.75 = $\(String(format: "%.2f", Double(hgvEhiMonthTotal) * 0.75))  "
         } else if monNewTotal >= 15.1 && monNewTotal <= 20.0 {
-            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $1.00 = $\(String(Double(hgvEhiMonthTotal) * 1.00))  "
+            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $1.00 = $\(String(format: "%.2f", Double(hgvEhiMonthTotal) * 1.00))  "
         } else if monNewTotal >= 20.1 && monNewTotal <= 25.0 {
-            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $1.25 = $\(String(Double(hgvEhiMonthTotal) * 1.25))  "
+            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $1.25 = $\(String(format: "%.2f", Double(hgvEhiMonthTotal) * 1.25))  "
         } else if monNewTotal >= 25.1 && monNewTotal <= 30.0 {
-            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $1.50 = $\(String(Double(hgvEhiMonthTotal) * 1.50))  "
+            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $1.50 = $\(String(format: "%.2f", Double(hgvEhiMonthTotal) * 1.50))  "
         } else if monNewTotal >= 30.1 && monNewTotal <= 35.0 {
-            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $1.75 = $\(String(Double(hgvEhiMonthTotal) * 1.75))  "
+            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $1.75 = $\(String(format: "%.2f", Double(hgvEhiMonthTotal) * 1.75))  "
         } else if monNewTotal > 35.0 {
-            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $2.00 = $\(String(Double(hgvEhiMonthTotal) * 2.00))  "
+            monthlyRatePace.text = "  \(hgvEhiMonthTotal) Xfers @ $2.00 = $\(String(format: "%.2f", Double(hgvEhiMonthTotal) * 2.00))  "
         }
 
         // Monthly Progress
-        monthlyProgress.animate(0, toAngle: monAngle, duration: 0.5) { completed in
+        monthlyProgress.animate(0, toAngle: monAngle, duration: 2.0) { completed in
             if completed {
                 print("Animation Stopped, Completed")
             } else {
@@ -586,30 +588,31 @@ class DailyStatsViewController: UIViewController {
         let flatEhiFinal = Array(ehiFinal.joined())
 
         let hgvEhiYearTotal = (flatHgvFinal.reduce(0, {$0 + $1}) + flatEhiFinal.reduce(0, {$0 + $1}))
+        print(yearlyTotal)
         let yearNewTotal = (Double(hgvEhiYearTotal) / Double(yearlyTotal)!) * 100
         let yearAngle = (yearNewTotal * 360) / 100
         yearlyLabel.text = "\(Int(yearNewTotal))% of Goal"
         
         if yearNewTotal < 5.1 {
-            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $.25 = $\(String(Double(hgvEhiYearTotal) * 0.25))  "
+            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $.25 = $\(String(format: "%.2f", Double(hgvEhiYearTotal) * 0.25))  "
         } else if yearNewTotal >= 5.1 && yearNewTotal <= 10.0 {
-            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $.50 = $\(String(Double(hgvEhiYearTotal) * 0.50))  "
+            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $.50 = $\(String(format: "%.2f", Double(hgvEhiYearTotal) * 0.50))  "
         } else if yearNewTotal >= 10.1 && yearNewTotal <= 15.0 {
-            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $.75 = $\(String(Double(hgvEhiYearTotal) * 0.75))  "
+            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $.75 = $\(String(format: "%.2f", Double(hgvEhiYearTotal) * 0.75))  "
         } else if yearNewTotal >= 15.1 && yearNewTotal <= 20.0 {
-            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $1.00 = $\(String(Double(hgvEhiYearTotal) * 1.00))  "
+            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $1.00 = $\(String(format: "%.2f", Double(hgvEhiYearTotal) * 1.00))  "
         } else if yearNewTotal >= 20.1 && yearNewTotal <= 25.0 {
-            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $1.25 = $\(String(Double(hgvEhiYearTotal) * 1.25))  "
+            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $1.25 = $\(String(format: "%.2f", Double(hgvEhiYearTotal) * 1.25))  "
         } else if yearNewTotal >= 25.1 && yearNewTotal <= 30.0 {
-            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $1.50 = $\(String(Double(hgvEhiYearTotal) * 1.50))  "
+            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $1.50 = $\(String(format: "%.2f", Double(hgvEhiYearTotal) * 1.50))  "
         } else if yearNewTotal >= 30.1 && yearNewTotal <= 35.0 {
-            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $1.75 = $\(String(Double(hgvEhiYearTotal) * 1.75))  "
+            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $1.75 = $\(String(format: "%.2f", Double(hgvEhiYearTotal) * 1.75))  "
         } else if yearNewTotal > 35.0 {
-            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $2.00 = $\(String(Double(hgvEhiYearTotal) * 2.00))  "
+            yearlyRatePace.text = "  \(hgvEhiYearTotal) Xfers @ $2.00 = $\(String(format: "%.2f", Double(hgvEhiYearTotal) * 2.00))  "
         }
 
         //        // Yearly Progress
-        yearlyProgress.animate(0, toAngle: yearAngle, duration: 0.5) { completed in
+        yearlyProgress.animate(0, toAngle: yearAngle, duration: 2.0) { completed in
             if completed {
                 print("Animation Stopped, Completed")
             } else {

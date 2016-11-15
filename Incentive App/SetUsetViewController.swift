@@ -205,6 +205,7 @@ class SetUsetViewController: UIViewController, UITextFieldDelegate {
             self.present(setAlertInvalid, animated: true, completion: nil)
         } else {
             print("Thank You!")
+            timeText.text = ""
         }
         donePicker()
         cancelPicker()

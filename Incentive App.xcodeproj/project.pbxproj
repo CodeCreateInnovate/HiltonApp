@@ -10,14 +10,18 @@
 		26F3E7446E32781D01392D7C /* Pods_Incentive_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFA5D0876119C8CDD335103 /* Pods_Incentive_AppTests.framework */; };
 		4487CAFF76F6803D6CDDEFA0 /* Pods_Incentive_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048624F7A58C0134ED8F4031 /* Pods_Incentive_AppUITests.framework */; };
 		89910F13D270BC54D4E086A6 /* Pods_Incentive_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF909308D36D6CFDD5A17B70 /* Pods_Incentive_App.framework */; };
+		DA0BB22F1DD58279001CE9B8 /* MonthDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0BB22E1DD58279001CE9B8 /* MonthDetailsModel.swift */; };
+		DA13884A1DCE34C600CBF23D /* MonthHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1388491DCE34C600CBF23D /* MonthHistoryViewController.swift */; };
 		DA1519D51D2F51C500A63331 /* NameEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519D41D2F51C500A63331 /* NameEntryViewController.swift */; };
 		DA1519D71D2F523A00A63331 /* DailyGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519D61D2F523A00A63331 /* DailyGoalViewController.swift */; };
 		DA1519D91D2F525800A63331 /* MonthlyGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */; };
 		DA1519DB1D2F528900A63331 /* YearlyGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */; };
 		DA1D3A581D37E06D00EC516A /* Incentive_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2FA1D2A0953004A38E3 /* Incentive_AppTests.swift */; };
+		DA260B251DD4EF5900EBC519 /* MonthDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA260B241DD4EF5900EBC519 /* MonthDetailTableViewCell.swift */; };
 		DA3AF1491D39F08C00880E73 /* DailyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */; };
 		DA428F361DC04BA800B1D28D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA428F341DC04BA800B1D28D /* Fabric.framework */; };
-		DA428F371DC04BA800B1D28D /* Answers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA428F351DC04BA800B1D28D /* Answers.framework */; };
+		DA5426CE1DCEF16A000CC2E6 /* MonthDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5426CD1DCEF16A000CC2E6 /* MonthDetailViewController.swift */; };
+		DA7B7FD61DCA350300B94D16 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7B7FD51DCA350300B94D16 /* Crashlytics.framework */; };
 		DABDB2E61D2A0952004A38E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */; };
 		DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E71D2A0952004A38E3 /* ViewController.swift */; };
 		DABDB2EB1D2A0952004A38E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABDB2E91D2A0952004A38E3 /* Main.storyboard */; };
@@ -73,13 +77,18 @@
 		ABFA5D0876119C8CDD335103 /* Pods_Incentive_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Incentive_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C319043ABA016CABE8F98C4D /* Pods-Incentive App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Incentive App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Incentive App/Pods-Incentive App.debug.xcconfig"; sourceTree = "<group>"; };
 		C900594C93CD4EC30C031D75 /* Pods-Incentive AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Incentive AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Incentive AppUITests/Pods-Incentive AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0BB22E1DD58279001CE9B8 /* MonthDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthDetailsModel.swift; sourceTree = "<group>"; };
+		DA1388491DCE34C600CBF23D /* MonthHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthHistoryViewController.swift; sourceTree = "<group>"; };
 		DA1519D41D2F51C500A63331 /* NameEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameEntryViewController.swift; sourceTree = "<group>"; };
 		DA1519D61D2F523A00A63331 /* DailyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyGoalViewController.swift; sourceTree = "<group>"; };
 		DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyGoalViewController.swift; sourceTree = "<group>"; };
 		DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlyGoalViewController.swift; sourceTree = "<group>"; };
+		DA260B241DD4EF5900EBC519 /* MonthDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStatsViewController.swift; sourceTree = "<group>"; };
 		DA428F341DC04BA800B1D28D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		DA428F351DC04BA800B1D28D /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Answers.framework; sourceTree = "<group>"; };
+		DA5426CD1DCEF16A000CC2E6 /* MonthDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthDetailViewController.swift; sourceTree = "<group>"; };
+		DA7B7FD51DCA350300B94D16 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		DABDB2E21D2A0952004A38E3 /* Incentive App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Incentive App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABDB2E71D2A0952004A38E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,9 +147,9 @@
 				DADCFF531DC05D5600B1C915 /* CoreMedia.framework in Frameworks */,
 				DADCFF511DC05D4F00B1C915 /* CoreGraphics.framework in Frameworks */,
 				DADCFF4F1DC05D3C00B1C915 /* AVFoundation.framework in Frameworks */,
+				DA7B7FD61DCA350300B94D16 /* Crashlytics.framework in Frameworks */,
 				DADCFF4D1DC05D2D00B1C915 /* AudioToolbox.framework in Frameworks */,
 				DADCFF4B1DC05D2500B1C915 /* AdSupport.framework in Frameworks */,
-				DA428F371DC04BA800B1D28D /* Answers.framework in Frameworks */,
 				89910F13D270BC54D4E086A6 /* Pods_Incentive_App.framework in Frameworks */,
 				DADCFF481DC05CA700B1C915 /* GoogleMobileAds.framework in Frameworks */,
 				DA428F361DC04BA800B1D28D /* Fabric.framework in Frameworks */,
@@ -204,6 +213,7 @@
 		DABDB2D91D2A0952004A38E3 = {
 			isa = PBXGroup;
 			children = (
+				DA7B7FD51DCA350300B94D16 /* Crashlytics.framework */,
 				DA428F341DC04BA800B1D28D /* Fabric.framework */,
 				DA428F351DC04BA800B1D28D /* Answers.framework */,
 				DABDB2E41D2A0952004A38E3 /* Incentive App */,
@@ -263,6 +273,7 @@
 		DABDB3131D2A09FF004A38E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA0BB22E1DD58279001CE9B8 /* MonthDetailsModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -273,6 +284,7 @@
 				DABDB3181D2A1BE8004A38E3 /* CustomButton.swift */,
 				DABDB31A1D2A1D36004A38E3 /* CustomBackground.swift */,
 				DABDB31C1D2A1F12004A38E3 /* CustomLabel.swift */,
+				DA260B241DD4EF5900EBC519 /* MonthDetailTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -291,6 +303,8 @@
 				DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */,
 				DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */,
 				DA1519D61D2F523A00A63331 /* DailyGoalViewController.swift */,
+				DA1388491DCE34C600CBF23D /* MonthHistoryViewController.swift */,
+				DA5426CD1DCEF16A000CC2E6 /* MonthDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -630,7 +644,11 @@
 				DADA845A1D2B67BD00EAA9B5 /* SetUsetViewController.swift in Sources */,
 				DABDB31D1D2A1F12004A38E3 /* CustomLabel.swift in Sources */,
 				DABDB3191D2A1BE8004A38E3 /* CustomButton.swift in Sources */,
+				DA13884A1DCE34C600CBF23D /* MonthHistoryViewController.swift in Sources */,
 				DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */,
+				DA260B251DD4EF5900EBC519 /* MonthDetailTableViewCell.swift in Sources */,
+				DA5426CE1DCEF16A000CC2E6 /* MonthDetailViewController.swift in Sources */,
+				DA0BB22F1DD58279001CE9B8 /* MonthDetailsModel.swift in Sources */,
 				DA1519D91D2F525800A63331 /* MonthlyGoalViewController.swift in Sources */,
 				DABDB3171D2A0CF8004A38E3 /* ContentViewController.swift in Sources */,
 				DABDB3261D2B533D004A38E3 /* BackTableViewController.swift in Sources */,
@@ -806,6 +824,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Incentive App/Incentive App-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -829,6 +848,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Incentive App/Incentive App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

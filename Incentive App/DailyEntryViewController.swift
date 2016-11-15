@@ -207,11 +207,6 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
                 dateAlertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                 self.present(dateAlertInvalid, animated: true, completion: nil)
             } else {
-            
-//            let dailyDataEntered = UIAlertController(title: "Thank You", message: "You Did Great Today", preferredStyle: UIAlertControllerStyle.alert)
-//            dailyDataEntered.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-//            self.present(dailyDataEntered, animated: true, completion: nil)
-            
             formatDate()
             appendToArrays()
             saveData()
@@ -523,6 +518,12 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         print(year)
         print(month)
         
+        if dailyCalls! < (dailyHgv! + dailyEhi!) {
+            let callsAlertInvalid = UIAlertController(title: "Invalid", message: "Total calls cannot be less than HGV and EHI combined", preferredStyle: UIAlertControllerStyle.alert)
+            callsAlertInvalid.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(callsAlertInvalid, animated: true, completion: nil)
+
+        } else {
         
         if month == 1 {
             if janDateArray.contains(dateEntered!) {
@@ -647,8 +648,9 @@ class DailyEntryViewController: UIViewController, UITextFieldDelegate, UIPickerV
         } else {
             print("Something is Wrong")
         }
-
     }
+
+}
     
     
     

@@ -17,7 +17,8 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
     @IBOutlet weak var editDailyGoal: UITextField!
     @IBOutlet weak var editMonthlyGoal: UITextField!
     @IBOutlet weak var editYearlyGoal: UITextField!
-
+    
+    
     @IBOutlet weak var banner: GADBannerView!
 
     //Arrays To Hold Counts For Pickers
@@ -60,22 +61,19 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         
         //Load The Data
         let dGoal = UserDefaults.standard
-        dGoal.synchronize()
         if let dlyGoal = dGoal.string(forKey: "dailyGoal") {
-            editDailyGoal.text = "Daily Goal: \(dlyGoal)"
+            editDailyGoal.text = (dlyGoal)
         }
 
         
         let mGoal = UserDefaults.standard
-        mGoal.synchronize()
         if let monGoal = mGoal.string(forKey: "monthlyGoal") {
-            editMonthlyGoal.text = "Monthly Goal: \(monGoal)"
+            editMonthlyGoal.text = (monGoal)
         }
         
         let yGoal = UserDefaults.standard
-        yGoal.synchronize()
         if let yearGoal = yGoal.string(forKey: "yearlyGoal") {
-            editYearlyGoal.text = "Yearly Goal: \(yearGoal)"
+            editYearlyGoal.text = (yearGoal)
         }
     
         
@@ -216,6 +214,7 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
         if pickerView.tag == 0 {
             editDailyGoal.text = "\(daily[row])"
         } else if pickerView.tag == 1 {
@@ -238,6 +237,7 @@ class AccountViewController: UIViewController, UITextFieldDelegate, UIPickerView
         let dGoal = UserDefaults.standard
         let mGoal = UserDefaults.standard
         let yGoal = UserDefaults.standard
+        
         
         nameDefaults.set(editFirstName.text, forKey: "firstName")
         nameDefaults.set(editLastName.text, forKey: "lastName")

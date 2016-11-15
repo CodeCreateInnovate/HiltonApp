@@ -10,7 +10,8 @@
 
 import UIKit
 import Fabric
-import Answers
+import Crashlytics
+
 
 
 @UIApplicationMain
@@ -77,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        Fabric.with([Answers.self])
+        Fabric.with([Answers.self, Crashlytics.self])
 
         // Override point for customization after application launch.
         return true
