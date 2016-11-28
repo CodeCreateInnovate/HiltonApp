@@ -17,10 +17,10 @@
 		DA1519D91D2F525800A63331 /* MonthlyGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */; };
 		DA1519DB1D2F528900A63331 /* YearlyGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */; };
 		DA1D3A581D37E06D00EC516A /* Incentive_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2FA1D2A0953004A38E3 /* Incentive_AppTests.swift */; };
-		DA260B251DD4EF5900EBC519 /* MonthDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA260B241DD4EF5900EBC519 /* MonthDetailTableViewCell.swift */; };
 		DA3AF1491D39F08C00880E73 /* DailyStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */; };
 		DA428F361DC04BA800B1D28D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA428F341DC04BA800B1D28D /* Fabric.framework */; };
 		DA5426CE1DCEF16A000CC2E6 /* MonthDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5426CD1DCEF16A000CC2E6 /* MonthDetailViewController.swift */; };
+		DA6702071DDF6CC10040627B /* MonthDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6702061DDF6CC10040627B /* MonthDetailCell.swift */; };
 		DA7B7FD61DCA350300B94D16 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7B7FD51DCA350300B94D16 /* Crashlytics.framework */; };
 		DABDB2E61D2A0952004A38E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */; };
 		DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABDB2E71D2A0952004A38E3 /* ViewController.swift */; };
@@ -83,11 +83,11 @@
 		DA1519D61D2F523A00A63331 /* DailyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyGoalViewController.swift; sourceTree = "<group>"; };
 		DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthlyGoalViewController.swift; sourceTree = "<group>"; };
 		DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearlyGoalViewController.swift; sourceTree = "<group>"; };
-		DA260B241DD4EF5900EBC519 /* MonthDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyStatsViewController.swift; sourceTree = "<group>"; };
 		DA428F341DC04BA800B1D28D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		DA428F351DC04BA800B1D28D /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Answers.framework; sourceTree = "<group>"; };
 		DA5426CD1DCEF16A000CC2E6 /* MonthDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthDetailViewController.swift; sourceTree = "<group>"; };
+		DA6702061DDF6CC10040627B /* MonthDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthDetailCell.swift; sourceTree = "<group>"; };
 		DA7B7FD51DCA350300B94D16 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		DABDB2E21D2A0952004A38E3 /* Incentive App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Incentive App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABDB2E51D2A0952004A38E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -284,7 +284,7 @@
 				DABDB3181D2A1BE8004A38E3 /* CustomButton.swift */,
 				DABDB31A1D2A1D36004A38E3 /* CustomBackground.swift */,
 				DABDB31C1D2A1F12004A38E3 /* CustomLabel.swift */,
-				DA260B241DD4EF5900EBC519 /* MonthDetailTableViewCell.swift */,
+				DA6702061DDF6CC10040627B /* MonthDetailCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -292,19 +292,19 @@
 		DABDB3151D2A0A10004A38E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DABDB2E71D2A0952004A38E3 /* ViewController.swift */,
-				DABDB3161D2A0CF8004A38E3 /* ContentViewController.swift */,
 				DABDB3231D2B50C9004A38E3 /* AccountViewController.swift */,
 				DABDB3251D2B533D004A38E3 /* BackTableViewController.swift */,
+				DABDB3161D2A0CF8004A38E3 /* ContentViewController.swift */,
 				DADA84571D2B678F00EAA9B5 /* DailyEntryViewController.swift */,
-				DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */,
-				DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */,
-				DA1519D41D2F51C500A63331 /* NameEntryViewController.swift */,
-				DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */,
-				DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */,
 				DA1519D61D2F523A00A63331 /* DailyGoalViewController.swift */,
-				DA1388491DCE34C600CBF23D /* MonthHistoryViewController.swift */,
+				DA3AF1481D39F08C00880E73 /* DailyStatsViewController.swift */,
 				DA5426CD1DCEF16A000CC2E6 /* MonthDetailViewController.swift */,
+				DA1388491DCE34C600CBF23D /* MonthHistoryViewController.swift */,
+				DA1519D81D2F525800A63331 /* MonthlyGoalViewController.swift */,
+				DA1519D41D2F51C500A63331 /* NameEntryViewController.swift */,
+				DADA84591D2B67BD00EAA9B5 /* SetUsetViewController.swift */,
+				DABDB2E71D2A0952004A38E3 /* ViewController.swift */,
+				DA1519DA1D2F528900A63331 /* YearlyGoalViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -634,6 +634,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DABDB3221D2B4F20004A38E3 /* SWRevealViewController.m in Sources */,
+				DA6702071DDF6CC10040627B /* MonthDetailCell.swift in Sources */,
 				DA1519DB1D2F528900A63331 /* YearlyGoalViewController.swift in Sources */,
 				DA3AF1491D39F08C00880E73 /* DailyStatsViewController.swift in Sources */,
 				DA1519D71D2F523A00A63331 /* DailyGoalViewController.swift in Sources */,
@@ -646,7 +647,6 @@
 				DABDB3191D2A1BE8004A38E3 /* CustomButton.swift in Sources */,
 				DA13884A1DCE34C600CBF23D /* MonthHistoryViewController.swift in Sources */,
 				DABDB2E81D2A0952004A38E3 /* ViewController.swift in Sources */,
-				DA260B251DD4EF5900EBC519 /* MonthDetailTableViewCell.swift in Sources */,
 				DA5426CE1DCEF16A000CC2E6 /* MonthDetailViewController.swift in Sources */,
 				DA0BB22F1DD58279001CE9B8 /* MonthDetailsModel.swift in Sources */,
 				DA1519D91D2F525800A63331 /* MonthlyGoalViewController.swift in Sources */,

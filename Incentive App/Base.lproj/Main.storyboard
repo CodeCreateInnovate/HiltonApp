@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C41b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OMO-Ps-G3D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OMO-Ps-G3D">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -252,7 +252,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-Km-SWm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcS-Km-SWm">
                                                     <rect key="frame" x="8" y="8" width="359" height="27.5"/>
                                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
@@ -1623,11 +1623,14 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wa8-xp-lEg" id="mdN-pd-7MW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="nfE-gQ-1mG" kind="showDetail" identifier="chosenMonth" id="WjV-60-eh3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1643,17 +1646,16 @@
                     <connections>
                         <outlet property="menuBtn" destination="S5a-cM-ejl" id="pSL-pd-dgH"/>
                         <outlet property="monthTableView" destination="NnW-d4-jfy" id="Jpa-mr-aB5"/>
-                        <segue destination="nfE-gQ-1mG" kind="show" identifier="toMonthDetail" id="oxr-6a-Fgd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgO-lV-4Gx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-938" y="-2111"/>
+            <point key="canvasLocation" x="-662" y="-2167"/>
         </scene>
         <!--MonthDetailViewController-->
         <scene sceneID="2XG-CQ-LeH">
             <objects>
-                <tableViewController id="nfE-gQ-1mG" userLabel="MonthDetailViewController" customClass="monthDetailViewController" customModule="Incentive_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="nfE-gQ-1mG" userLabel="MonthDetailViewController" customClass="MonthDetailViewController" customModule="Incentive_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="fEQ-Gb-ljs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1661,11 +1663,11 @@
                         <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dateHistoryCell" rowHeight="100" id="Yvx-uE-shC" customClass="MonthDetailTableViewCell" customModule="Incentive_App" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dateHistoryCell" rowHeight="100" id="Yvx-uE-shC" customClass="MonthDetailCell" customModule="Incentive_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yvx-uE-shC" id="9XA-dn-2Zf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diO-V1-t6a">
@@ -1744,11 +1746,10 @@
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.16862745100000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="callsText" destination="Au2-er-juY" id="a88-Bd-68E"/>
-                                    <outlet property="dateLbl" destination="56p-tf-i7z" id="OXy-Bc-AbH"/>
-                                    <outlet property="ehiText" destination="8HH-HJ-RFU" id="mqx-Yi-FeF"/>
-                                    <outlet property="hgvText" destination="290-BX-AyC" id="y2V-aC-muc"/>
-                                    <outlet property="monthDetail" destination="fEQ-Gb-ljs" id="2GS-af-5Zn"/>
+                                    <outlet property="calls" destination="Au2-er-juY" id="axN-kd-AFj"/>
+                                    <outlet property="date" destination="56p-tf-i7z" id="1xY-uV-q70"/>
+                                    <outlet property="ehi" destination="8HH-HJ-RFU" id="mcN-Yn-uhN"/>
+                                    <outlet property="hgv" destination="290-BX-AyC" id="Oyf-9A-gNU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2168,11 +2169,11 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="I6g-2w-gBc"/>
-        <segue reference="oxr-6a-Fgd"/>
-        <segue reference="csm-bL-CFg"/>
-        <segue reference="1rw-YD-PxV"/>
+        <segue reference="WjV-60-eh3"/>
         <segue reference="oZC-vu-H5O"/>
         <segue reference="pua-mI-eVg"/>
         <segue reference="gEW-Gr-m8R"/>
+        <segue reference="csm-bL-CFg"/>
+        <segue reference="1rw-YD-PxV"/>
     </inferredMetricsTieBreakers>
 </document>
